@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)https://earnyway.com/user/keywords -->
+<html lang="en" class="hydrated"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style data-styles="">ion-icon{visibility:hidden}.hydrated{visibility:inherit}</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Keywords | Earnyway</title>
+    <link rel="icon" type="image" href="./Keywords _ Earnyway_files/fav-icon.png">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./Keywords _ Earnyway_files/all.min.css">
+
+    <link rel="stylesheet" href="./Keywords _ Earnyway_files/header_main_content.min.css">
+    <link rel="stylesheet" href="./Keywords _ Earnyway_files/sidebar.min.css">
+
+    <!-- Include page-specific styles -->
+        <link rel="stylesheet" href="./Keywords _ Earnyway_files/user-bootstrap-style.css">
+    <link rel="stylesheet" href="./Keywords _ Earnyway_files/select2.min.css">
+    <link rel="stylesheet" href="./Keywords _ Earnyway_files/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="./Keywords _ Earnyway_files/responsive.dataTables.min.css">
+    
+     <style>
+        .table thead {
+            background-color: #346eff;
+        }
+
+        /* Common styles for the table */
+        .custom-table {
+            max-width: 100%;
+            overflow-x: auto;
+        }
+
+        .custom-table table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+
+        .custom-table th {
+            font-weight: bold;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 767px) {
+
+            /* Enable horizontal scrolling for small screens */
+            .custom-table {
+                overflow-x: auto;
+            }
+
+            /* Prevent text overflow and enable nowrap for table cells */
+            .custom-table th,
+            .custom-table td {
+                white-space: nowrap;
+            }
+
+            /* Hide the table header on small screens */
+            .custom-table thead {
+                display: none;
+            }
+
+            /* Display content using the ::before pseudo-element for each cell */
+            .custom-table tbody td:before {
+                content: attr(data-label);
+            }
+        }
+
+        /* Reset pseudo-element content for all cells */
+        .custom-table td:before {
+            content: "";
+        }
+
+        /* Reset text alignment for table cells */
+        .custom-table th,
+        .custom-table td {
+            text-align: left;
+            padding: 8px;
+        }
+
+        /* Additional styles for DataTables plugin */
+        .dataTables_filter {
+            margin-bottom: 10px;
+        }
+
+        .dataTables_wrapper .dataTables_scroll {
+            margin-top: 10px;
+        }
+
+        /* Adjustments for responsiveness */
+        @media (max-width: 767px) {
+            #filter-form .mb-3 {
+                margin-bottom: 10px;
+            }
+
+            #filter-form .form-control {
+                width: 100%;
+                margin-bottom: 10px;
+                /* Add some space between stacked form fields */
+            }
+
+            #filter-form .col-sm-3 {
+                width: 100%;
+                /* Set to full width on small screens */
+            }
+
+            #filter-form .col-sm-6 {
+                width: 100%;
+                /* Set to full width on small screens */
+            }
+
+            #filter-form button {
+                width: 45%;
+            }
+
+            .mt-4 {
+                margin-top: 10px;
+                /* Adjust top margin for smaller screens */
+            }
+
+            .table-responsive {
+                overflow-x: auto;
+            }
+
+        }
+
+        /* Custom styling for the frame */
+        .table-frame {
+            max-width: 100%;
+            overflow: hidden;
+            border: 1px solid #ddd;
+            /* Border for the frame */
+            border-radius: 8px;
+            /* Optional: Rounded corners for aesthetics */
+            margin-top: 20px;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 767px) {
+            #work-details-table th,
+            #work-details-table td {
+                /* white-space: nowrap; */
+            }
+        }
+
+
+        /* Additional styling for better visual separation */
+        #filter-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        #filter-form button {
+            margin-top: 10px;
+        }
+        
+       .page-specific-content table tr:hover {
+          background: #2a2185;
+          color: black;
+       }
+
+    </style>
+    
+
+    <!-- Load jQuery from local assets folder -->
+    <script src="./Keywords _ Earnyway_files/jquery-3.6.4.min.js.download"></script>
+
+    <script>
+        $(document).ready(function() {
+            $(".navigation ul li").hover(
+                function() {
+                    $(this).addClass("hovered");
+                },
+                function() {
+                    $(this).removeClass("hovered");
+                }
+            );
+        });
+    </script>
+
+</head>
+
+<body>
+    <!----------------- Navigation ----------------->
+    <div class="container">
+        <div class="navigation" id="navigation" style="display: none;">
+            <div class="toggle-btn" id="toggle-btn">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+            <ul>
+                <div class="logo-toggle-container">
+                    <div class="logo-container">
+                        <a href="https://earnyway.com/">
+                            <img src="./Keywords _ Earnyway_files/logo.png" alt="Logo" class="default-logo">
+                            <img src="./Keywords _ Earnyway_files/fav-icon.png" alt="Logo" class="active-logo">
+                        </a>
+                    </div>
+                </div>
+                <br>
+                <li class="">
+                    <a href="https://earnyway.com/user/dashboard">
+                        <span class="icon">
+                            <ion-icon name="speedometer-outline" role="img" class="md hydrated" aria-label="speedometer outline"><template shadowrootmode="open"><div class="icon-inner"><svg xmlns="http://www.w3.org/2000/svg" class="ionicon s-ion-icon" viewBox="0 0 512 512"><title>Speedometer</title><path d="M326.1 231.9l-47.5 75.5a31 31 0 01-7 7 30.11 30.11 0 01-35-49l75.5-47.5a10.23 10.23 0 0111.7 0 10.06 10.06 0 012.3 14z"></path><path d="M256 64C132.3 64 32 164.2 32 287.9a223.18 223.18 0 0056.3 148.5c1.1 1.2 2.1 2.4 3.2 3.5a25.19 25.19 0 0037.1-.1 173.13 173.13 0 01254.8 0 25.19 25.19 0 0037.1.1l3.2-3.5A223.18 223.18 0 00480 287.9C480 164.2 379.7 64 256 64z" stroke-linecap="round" stroke-linejoin="round" class="ionicon-fill-none ionicon-stroke-width"></path><path stroke-linecap="round" stroke-miterlimit="10" d="M256 128v32M416 288h-32M128 288H96M165.49 197.49l-22.63-22.63M346.51 197.49l22.63-22.63" class="ionicon-fill-none ionicon-stroke-width"></path></svg></div></template></ion-icon>
+                        </span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="https://earnyway.com/user/keywords">
+                        <span class="icon">
+                            <ion-icon name="search-outline" role="img" class="md hydrated" aria-label="search outline"><template shadowrootmode="open"><div class="icon-inner"><svg xmlns="http://www.w3.org/2000/svg" class="ionicon s-ion-icon" viewBox="0 0 512 512"><title>Search</title><path d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z" stroke-miterlimit="10" class="ionicon-fill-none ionicon-stroke-width"></path><path stroke-linecap="round" stroke-miterlimit="10" d="M338.29 338.29L448 448" class="ionicon-fill-none ionicon-stroke-width"></path></svg></div></template></ion-icon>
+                        </span>
+                        <span class="title">Keywords</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="https://earnyway.com/user/filters">
+                        <span class="icon">
+                            <ion-icon name="options-outline" role="img" class="md hydrated" aria-label="options outline"><template shadowrootmode="open"><div class="icon-inner"><svg xmlns="http://www.w3.org/2000/svg" class="ionicon s-ion-icon" viewBox="0 0 512 512"><title>Options</title><path stroke-linecap="round" stroke-linejoin="round" d="M368 128h80M64 128h240M368 384h80M64 384h240M208 256h240M64 256h80" class="ionicon-fill-none ionicon-stroke-width"></path><circle cx="336" cy="128" r="32" stroke-linecap="round" stroke-linejoin="round" class="ionicon-fill-none ionicon-stroke-width"></circle><circle cx="176" cy="256" r="32" stroke-linecap="round" stroke-linejoin="round" class="ionicon-fill-none ionicon-stroke-width"></circle><circle cx="336" cy="384" r="32" stroke-linecap="round" stroke-linejoin="round" class="ionicon-fill-none ionicon-stroke-width"></circle></svg></div></template></ion-icon>
+                        </span>
+                        <span class="title">Filter</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="https://earnyway.com/user/worksubmits">
+                        <span class="icon">
+                            <ion-icon name="document-text-outline" role="img" class="md hydrated" aria-label="document text outline"><template shadowrootmode="open"><div class="icon-inner"><svg xmlns="http://www.w3.org/2000/svg" class="ionicon s-ion-icon" viewBox="0 0 512 512"><title>Document Text</title><path d="M416 221.25V416a48 48 0 01-48 48H144a48 48 0 01-48-48V96a48 48 0 0148-48h98.75a32 32 0 0122.62 9.37l141.26 141.26a32 32 0 019.37 22.62z" stroke-linejoin="round" class="ionicon-fill-none ionicon-stroke-width"></path><path d="M256 56v120a32 32 0 0032 32h120M176 288h160M176 368h160" stroke-linecap="round" stroke-linejoin="round" class="ionicon-fill-none ionicon-stroke-width"></path></svg></div></template></ion-icon>
+                        </span>
+                        <span class="title">Work Submit</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="https://earnyway.com/user/announcements">
+                        <span class="icon">
+                            <ion-icon name="megaphone-outline" role="img" class="md hydrated" aria-label="megaphone outline"><template shadowrootmode="open"><div class="icon-inner"><svg xmlns="http://www.w3.org/2000/svg" class="ionicon s-ion-icon" viewBox="0 0 512 512"><title>Megaphone</title><path d="M407.94 52.22S321.3 160 240 160H80a16 16 0 00-16 16v96a16 16 0 0016 16h160c81.3 0 167.94 108.23 167.94 108.23 6.06 8 24.06 2.52 24.06-9.83V62c0-12.31-17-18.82-24.06-9.78zM64 256s-16-6-16-32 16-32 16-32M448 246s16-4.33 16-22-16-22-16-22M256 160v128M112 160v128" stroke-linecap="round" stroke-linejoin="round" class="ionicon-fill-none ionicon-stroke-width"></path><path d="M144 288v168a8 8 0 008 8h53a16 16 0 0015.29-20.73C211.91 416.39 192 386.08 192 336h16a16 16 0 0016-16v-16a16 16 0 00-16-16h-16" stroke-linecap="round" stroke-linejoin="round" class="ionicon-fill-none ionicon-stroke-width"></path></svg></div></template></ion-icon>
+                        </span>
+                        <span class="title">Announcement</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="https://earnyway.com/user/withdraws">
+                        <span class="icon">
+                            <ion-icon name="cash-outline" role="img" class="md hydrated" aria-label="cash outline"><template shadowrootmode="open"><div class="icon-inner"><svg xmlns="http://www.w3.org/2000/svg" class="ionicon s-ion-icon" viewBox="0 0 512 512"><title>Cash</title><rect x="32" y="80" width="448" height="256" rx="16" ry="16" transform="rotate(180 256 208)" stroke-linejoin="round" class="ionicon-fill-none ionicon-stroke-width"></rect><path stroke-linecap="round" stroke-linejoin="round" d="M64 384h384M96 432h320" class="ionicon-fill-none ionicon-stroke-width"></path><circle cx="256" cy="208" r="80" stroke-linecap="round" stroke-linejoin="round" class="ionicon-fill-none ionicon-stroke-width"></circle><path d="M480 160a80 80 0 01-80-80M32 160a80 80 0 0080-80M480 256a80 80 0 00-80 80M32 256a80 80 0 0180 80" stroke-linecap="round" stroke-linejoin="round" class="ionicon-fill-none ionicon-stroke-width"></path></svg></div></template></ion-icon>
+                        </span>
+                        <span class="title">Withdraw</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="https://earnyway.com/user/test">
+                        <span class="icon">
+                            <ion-icon name="help-outline" role="img" class="md hydrated" aria-label="help outline"><template shadowrootmode="open"><div class="icon-inner"><svg xmlns="http://www.w3.org/2000/svg" class="ionicon s-ion-icon" viewBox="0 0 512 512"><title>Help</title><path d="M160 164s1.44-33 33.54-59.46C212.6 88.83 235.49 84.28 256 84c18.73-.23 35.47 2.94 45.48 7.82C318.59 100.2 352 120.6 352 164c0 45.67-29.18 66.37-62.35 89.18S248 298.36 248 324" stroke-linecap="round" stroke-miterlimit="10" stroke-width="40" class="ionicon-fill-none"></path><circle cx="248" cy="399.99" r="32"></circle></svg></div></template></ion-icon>
+                        </span>
+                        <span class="title">I need help!</span>
+                    </a>
+                </li>
+               <li class="">
+                    <a href="https://earnyway.com/user/faq">
+                        <span class="icon">
+                            <!--<img src="https://earnyway.com/public/assets/user/images/faq.svg" alt="FAQ Icon" height="30px" width="30px" style="background-color:#fff;">-->
+                            <ion-icon name="help-circle-outline" role="img" class="md hydrated" aria-label="help circle outline"><template shadowrootmode="open"><div class="icon-inner"><svg xmlns="http://www.w3.org/2000/svg" class="ionicon s-ion-icon" viewBox="0 0 512 512"><title>Help Circle</title><path d="M256 80a176 176 0 10176 176A176 176 0 00256 80z" stroke-miterlimit="10" class="ionicon-fill-none ionicon-stroke-width"></path><path d="M200 202.29s.84-17.5 19.57-32.57C230.68 160.77 244 158.18 256 158c10.93-.14 20.69 1.67 26.53 4.45 10 4.76 29.47 16.38 29.47 41.09 0 26-17 37.81-36.37 50.8S251 281.43 251 296" stroke-linecap="round" stroke-miterlimit="10" stroke-width="28" class="ionicon-fill-none"></path><circle cx="250" cy="348" r="20"></circle></svg></div></template></ion-icon>
+                        </span>
+                        <span class="title">FAQ</span>
+                    </a>
+                </li>
+
+                <div class="vertical-space-40"></div>
+                <li class="">
+                    <a href="https://earnyway.com/user/settings">
+                        <span class="icon">
+                            <ion-icon name="settings-outline" role="img" class="md hydrated" aria-label="settings outline"><template shadowrootmode="open"><div class="icon-inner"><svg xmlns="http://www.w3.org/2000/svg" class="ionicon s-ion-icon" viewBox="0 0 512 512"><title>Settings</title><path d="M262.29 192.31a64 64 0 1057.4 57.4 64.13 64.13 0 00-57.4-57.4zM416.39 256a154.34 154.34 0 01-1.53 20.79l45.21 35.46a10.81 10.81 0 012.45 13.75l-42.77 74a10.81 10.81 0 01-13.14 4.59l-44.9-18.08a16.11 16.11 0 00-15.17 1.75A164.48 164.48 0 01325 400.8a15.94 15.94 0 00-8.82 12.14l-6.73 47.89a11.08 11.08 0 01-10.68 9.17h-85.54a11.11 11.11 0 01-10.69-8.87l-6.72-47.82a16.07 16.07 0 00-9-12.22 155.3 155.3 0 01-21.46-12.57 16 16 0 00-15.11-1.71l-44.89 18.07a10.81 10.81 0 01-13.14-4.58l-42.77-74a10.8 10.8 0 012.45-13.75l38.21-30a16.05 16.05 0 006-14.08c-.36-4.17-.58-8.33-.58-12.5s.21-8.27.58-12.35a16 16 0 00-6.07-13.94l-38.19-30A10.81 10.81 0 0149.48 186l42.77-74a10.81 10.81 0 0113.14-4.59l44.9 18.08a16.11 16.11 0 0015.17-1.75A164.48 164.48 0 01187 111.2a15.94 15.94 0 008.82-12.14l6.73-47.89A11.08 11.08 0 01213.23 42h85.54a11.11 11.11 0 0110.69 8.87l6.72 47.82a16.07 16.07 0 009 12.22 155.3 155.3 0 0121.46 12.57 16 16 0 0015.11 1.71l44.89-18.07a10.81 10.81 0 0113.14 4.58l42.77 74a10.8 10.8 0 01-2.45 13.75l-38.21 30a16.05 16.05 0 00-6.05 14.08c.33 4.14.55 8.3.55 12.47z" stroke-linecap="round" stroke-linejoin="round" class="ionicon-fill-none ionicon-stroke-width"></path></svg></div></template></ion-icon>
+                        </span>
+                        <span class="title">Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <form id="logout-form" method="POST" action="https://earnyway.com/user/logout">
+                        <input type="hidden" name="_token" value="LclGXDOJ8QlxNPILSZ86IpUB8lFpucdFeH54NtNv" autocomplete="off">                        <a href="https://earnyway.com/user/logout" onclick="event.preventDefault(); document.getElementById(&#39;logout-form&#39;).submit();">
+                            <span class="icon">
+                                <ion-icon name="log-out-outline" role="img" class="md hydrated" aria-label="log out outline"><template shadowrootmode="open"><div class="icon-inner"><svg xmlns="http://www.w3.org/2000/svg" class="ionicon s-ion-icon" viewBox="0 0 512 512"><title>Log Out</title><path d="M304 336v40a40 40 0 01-40 40H104a40 40 0 01-40-40V136a40 40 0 0140-40h152c22.09 0 48 17.91 48 40v40M368 336l80-80-80-80M176 256h256" stroke-linecap="round" stroke-linejoin="round" class="ionicon-fill-none ionicon-stroke-width"></path></svg></div></template></ion-icon>
+                            </span>
+                            <span class="title">Logout</span>
+                        </a>
+                    </form>
+                </li>
+            </ul>
+
+        </div>
+
+        <!-- ========================= Main ==================== -->
+        <div class="main">
+            <div class="topbar">
+                <span class="page-title">Keywords</span>
+                <!--<div class="search">-->
+                <!--    <label>-->
+                <!--        <input type="text" placeholder="search here">-->
+                <!--    </label>-->
+                <!--</div>-->
+                <div class="topbar-buttons" style="margin-left: auto;">
+                    <button class="announcement-button announcement-link" id="announcement-dropdown-toggle">
+                        <i class="fa fa-bullhorn"></i>
+                        <span id="unreadCountBadge" style="display: none;">0</span>
+                    </button>
+                    <div class="announcement-dropdown js-dropdown">
+                        <div class="announcement-dropdown__body" id="announcement-dropdown-body">
+                            <!-- Content will be dynamically added here -->
+                        </div>
+                    </div>
+                    <button class="help-button">
+                        <a href="https://earnyway.com/user/test">
+                            <i class="fa fa-question-circle"></i>
+                        </a>
+                    </button>
+                </div>
+                <div class="user-profile">
+                    <div class="user-info-container">
+                        <div class="user-info">
+                            <p class="user-name">
+                                Montasir Rahman                            </p>
+                            <p class="user-id" style="float: right;"># D19900</p>
+                        </div>
+                        <div class="profile-image-container">
+                                                            <!-- user's image if it exists -->
+                                <img src="./Keywords _ Earnyway_files/1733775706_win_20210419_12_23_27_pro_(1).jpg" alt="Montasir Rahman" class="profile-picture">
+                                                    </div>
+                    </div>
+                    <button class="dropdown-button" id="user-dropdown-toggle">
+                        <i class="fa fa-arrow-circle-down" style="color: white;"></i>
+                    </button>
+                    <!-- User Account Dropdown -->
+                    <div class="account-dropdown js-dropdown">
+                        <div class="account-dropdown__body">
+                            <div class="account-dropdown__item">
+                                <a href="https://earnyway.com/my-profile">
+                                    <i class="fa fa-user"></i> My Profile
+                                </a>
+                            </div>
+                            <div class="account-dropdown__item">
+                                <a href="https://earnyway.com/user/settings">
+                                    <i class="fa fa-cog"></i> Settings
+                                </a>
+                            </div>
+                        </div>
+                        <div class="account-dropdown__footer">
+                            <form id="logout-form" method="POST" action="https://earnyway.com/user/logout">
+                                <input type="hidden" name="_token" value="LclGXDOJ8QlxNPILSZ86IpUB8lFpucdFeH54NtNv" autocomplete="off">                                <a href="https://earnyway.com/user/logout" style="text-decoration: none;" onclick="event.preventDefault(); document.getElementById(&#39;logout-form&#39;).submit();">
+                                    <div class="menu-item">
+                                        <i class="fa fa-sign-out"></i> Logout
+                                    </div>
+                                </a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- ================= Page Content ================ -->
+            <div class="page-specific-content">
+                    <div class="container">
+        <div class="row">
+            <form id="filter-form" class="form-inline">
+                <input type="hidden" name="_token" value="LclGXDOJ8QlxNPILSZ86IpUB8lFpucdFeH54NtNv" autocomplete="off">                <div class="col-sm-3">
+                    <label for="category">Category:</label>
+                    <select name="category" id="category" class="form-control select2-hidden-accessible" data-select2-id="category" tabindex="-1" aria-hidden="true">
+                        <option value="" data-select2-id="2">All Categories</option>
+                                                    <option value="18">E-Commerce</option>
+                                                    <option value="19">ANY</option>
+                                                    <option value="20">Social Media</option>
+                                            </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="1" style="width: 326px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-category-container"><span class="select2-selection__rendered" id="select2-category-container" role="textbox" aria-readonly="true" title="All Categories">All Categories</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                </div>
+                <div class="col-sm-3">
+                    <label for="countries" style="padding-bottom:5px;">Country:</label>
+                    <select name="countries[]" id="countries" class="form-control required-field select2-hidden-accessible" multiple="" data-select2-id="countries" tabindex="-1" aria-hidden="true">
+                                                    <option value="16">United States</option>
+                                                    <option value="17">United Kingdom</option>
+                                                    <option value="18">Germany</option>
+                                                    <option value="19">France</option>
+                                                    <option value="20">Canada</option>
+                                                    <option value="21">Australia</option>
+                                                    <option value="22">Italy</option>
+                                                    <option value="23">Switzerland</option>
+                                                    <option value="24">Netherlands</option>
+                                                    <option value="25">Poland</option>
+                                                    <option value="26">Sweden</option>
+                                                    <option value="27">Norway</option>
+                                                    <option value="28">Hungary</option>
+                                                    <option value="29">Finland</option>
+                                                    <option value="30">Romania</option>
+                                                    <option value="31">Iceland</option>
+                                                    <option value="32">India</option>
+                                                    <option value="33">China</option>
+                                                    <option value="34">Ireland</option>
+                                                    <option value="35">SOUTH AFRICA</option>
+                                                    <option value="36">JAPAN</option>
+                                            </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="3" style="width: 326px;"><span class="selection"><span class="select2-selection select2-selection--multiple" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1" aria-disabled="false"><ul class="select2-selection__rendered"><li class="select2-search select2-search--inline"><input class="select2-search__field" type="search" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" role="searchbox" aria-autocomplete="list" placeholder="" style="width: 0.75em;"></li></ul></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                </div>
+                <div class="col-sm-3">
+                    <label for="verticals" style="padding-bottom:5px;">Vertical:</label>
+                    <select name="verticals[]" id="verticals" class="form-control required-field select2-hidden-accessible" multiple="" data-select2-id="verticals" tabindex="-1" aria-hidden="true">
+                                                    <option value="9">Alibaba</option>
+                                                    <option value="10">Ebay</option>
+                                                    <option value="11">Etsy</option>
+                                                    <option value="12">LinkedIN</option>
+                                                    <option value="13">ANY</option>
+                                                    <option value="14">Amazon</option>
+                                            </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="4" style="width: 326px;"><span class="selection"><span class="select2-selection select2-selection--multiple" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1" aria-disabled="false"><ul class="select2-selection__rendered"><li class="select2-search select2-search--inline"><input class="select2-search__field" type="search" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" role="searchbox" aria-autocomplete="list" placeholder="" style="width: 0.75em;"></li></ul></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                </div>
+                <button type="submit" class="col-sm-4 btn btn-custom-primary">Apply</button>
+                <button type="button" class=" col-sm-4 btn btn-custom-secondary" id="clear-filters">Clear</button>
+            </form>
+        </div>
+        <br>
+       <div class="row">
+            <div class="table-responsive" style="padding-top:20px;">
+                <div id="work-details-table_wrapper" class="dataTables_wrapper no-footer"><div class="dataTables_length" id="work-details-table_length"><label>Show <select name="work-details-table_length" aria-controls="work-details-table" class=""><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> entries</label></div><div id="work-details-table_filter" class="dataTables_filter"><label>Search:<input type="search" class="" placeholder="" aria-controls="work-details-table"></label></div><div id="work-details-table_processing" class="dataTables_processing" role="status" style="display: none;"><div><div></div><div></div><div></div><div></div></div></div><table id="work-details-table" class="table table-bordered table-responsive dataTable no-footer dtr-inline" width="100%" aria-describedby="work-details-table_info" style="width: 100%;">
+                <thead>
+                    <tr><th data-priority="1" class="sorting" tabindex="0" aria-controls="work-details-table" rowspan="1" colspan="1" style="width: 142px;" aria-label="Keyword ID: activate to sort column ascending">Keyword ID</th><th class="sorting" tabindex="0" aria-controls="work-details-table" rowspan="1" colspan="1" style="width: 431px;" aria-label="Name: activate to sort column ascending">Name</th><th class="sorting" tabindex="0" aria-controls="work-details-table" rowspan="1" colspan="1" style="width: 398px;" aria-label="Countries: activate to sort column ascending">Countries</th><th class="sorting" tabindex="0" aria-controls="work-details-table" rowspan="1" colspan="1" style="width: 128px;" aria-label="Category: activate to sort column ascending">Category</th><th class="sorting" tabindex="0" aria-controls="work-details-table" rowspan="1" colspan="1" style="width: 189px;" aria-label="Verticals: activate to sort column ascending">Verticals</th><th style="width: 112px;" class="sorting" tabindex="0" aria-controls="work-details-table" rowspan="1" colspan="1" aria-label="Details: activate to sort column ascending">Details</th></tr>
+                </thead>
+                <tbody><tr class="odd dt-hasChild shown"><td class="dtr-control">829</td><td>CEO Contact Data of Travel Agencies</td><td>United Kingdom</td><td>ANY</td><td>ANY</td><td><button class="btn btn-link details-button" data-toggle="collapse" data-target="#details-undefined">Hide</button></td></tr><tr><td colspan="6"><div id="details-undefined" class="collapse">
+                    Details: <p><span data-sheets-root="1" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;This Keyword focuses on Chief Executive Officers (CEOs) of travel agencies company.\nIndustry: Travel &amp; Tourism\nServices: Air Tickets, Hotel Booking, Tour Packages, etc.\nRestriction: The website is less than 5 years old.&quot;}" data-sheets-userformat="{&quot;2&quot;:14977,&quot;3&quot;:{&quot;1&quot;:0},&quot;10&quot;:1,&quot;12&quot;:0,&quot;14&quot;:{&quot;1&quot;:2,&quot;2&quot;:0},&quot;15&quot;:&quot;Inter&quot;,&quot;16&quot;:12}" data-sheets-textstyleruns="{&quot;1&quot;:0}{&quot;1&quot;:169,&quot;2&quot;:{&quot;2&quot;:{&quot;1&quot;:2,&quot;2&quot;:16711680}}}" style="color: rgb(0, 0, 0); font-size: 12pt; font-family: Inter, Arial;"><span style="font-size: 12pt;">This Keyword focuses on Chief Executive Officers (CEOs) of travel agencies company.<br>Industry: Travel &amp; Tourism<br>Services: Air Tickets, Hotel Booking, Tour Packages, etc.<br></span><span style="font-size: 12pt; color: rgb(255, 0, 0);">Restriction: The website is less than 5 years old.</span></span><br></p><br>
+                </div></td></tr><tr class="even dt-hasChild shown"><td class="dtr-control">828</td><td>CEO Contact Data of Travel Agencies</td><td>United States</td><td>ANY</td><td>ANY</td><td><button class="btn btn-link details-button" data-toggle="collapse" data-target="#details-undefined">Hide</button></td></tr><tr><td colspan="6"><div id="details-undefined" class="collapse">
+                    Details: <p><span data-sheets-root="1" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;This Keyword focuses on Chief Executive Officers (CEOs) of travel agencies company.\nIndustry: Travel &amp; Tourism\nServices: Air Tickets, Hotel Booking, Tour Packages, etc.\nRestriction: The website is less than 5 years old.&quot;}" data-sheets-userformat="{&quot;2&quot;:14977,&quot;3&quot;:{&quot;1&quot;:0},&quot;10&quot;:1,&quot;12&quot;:0,&quot;14&quot;:{&quot;1&quot;:2,&quot;2&quot;:0},&quot;15&quot;:&quot;Inter&quot;,&quot;16&quot;:12}" data-sheets-textstyleruns="{&quot;1&quot;:0}{&quot;1&quot;:169,&quot;2&quot;:{&quot;2&quot;:{&quot;1&quot;:2,&quot;2&quot;:16711680}}}" style="color: rgb(0, 0, 0); font-size: 12pt; font-family: Inter, Arial;"><span style="font-size: 12pt;">This Keyword focuses on Chief Executive Officers (CEOs) of travel agencies company.<br>Industry: Travel &amp; Tourism<br>Services: Air Tickets, Hotel Booking, Tour Packages, etc.<br></span><span style="font-size: 12pt; color: rgb(255, 0, 0);">Restriction: The website is less than 5 years old.</span></span><br></p><br>
+                </div></td></tr><tr class="odd dt-hasChild shown"><td class="dtr-control">773</td><td>Home Audio &amp; Theater Products Store</td><td>United States, United Kingdom, Canada</td><td>E-Commerce</td><td>Alibaba, Ebay, Etsy</td><td><button class="btn btn-link details-button" data-toggle="collapse" data-target="#details-undefined">Hide</button></td></tr><tr><td colspan="6"><div id="details-undefined" class="collapse">
+                    Details: <p><span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;DESCRIPTION OF THIS TASK- \nStore Type: Compact Radios &amp; Stereos, Home Audio Accessories, Home Theater Audio, Home Audio Speakers, Home Stereo System Components, Turntables &amp; Accessories, Wireless &amp; Streaming Audio Systems\nRestrictions: Sellers total sells not more than 5,000.&quot;}" data-sheets-userformat="{&quot;2&quot;:21377,&quot;3&quot;:{&quot;1&quot;:0},&quot;10&quot;:1,&quot;11&quot;:0,&quot;12&quot;:0,&quot;15&quot;:&quot;Arial&quot;,&quot;17&quot;:1}" data-sheets-textstyleruns="{&quot;1&quot;:0}{&quot;1&quot;:222,&quot;2&quot;:{&quot;2&quot;:{&quot;1&quot;:2,&quot;2&quot;:16711680}}}" style="color: rgb(0, 0, 0); font-size: 10pt; font-family: Arial;"><span style="font-size: 10pt;"><b>DESCRIPTION OF THIS TASK-</b><br>Store Type: Compact Radios and stereos, Home Audio Accessories, Home Theater Audio, Home Audio Speakers, Home Stereo System Components, Turntables and accessories, Wireless and streaming Audio Systems<br></span><span style="font-size: 10pt; color: rgb(255, 0, 0);">Restrictions: Seller's total sells not more than 5,000.</span></span><br></p><br>
+                </div></td></tr><tr class="even dt-hasChild shown"><td class="dtr-control">772</td><td>Headphones, Earbuds &amp; Accessories Store</td><td>United States, United Kingdom, Canada</td><td>E-Commerce</td><td>Alibaba, Ebay, Etsy</td><td><button class="btn btn-link details-button" data-toggle="collapse" data-target="#details-undefined">Hide</button></td></tr><tr><td colspan="6"><div id="details-undefined" class="collapse">
+                    Details: <p><span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;DESCRIPTION OF THIS TASK- \r\nStore Type: Earbud &amp; In-Ear Headphones, On-Ear Headphones, Over-Ear Headphones\r\nRestrictions: Sellers total sells not more than 5,000.&quot;}" data-sheets-userformat="{&quot;2&quot;:20609,&quot;3&quot;:{&quot;1&quot;:0},&quot;10&quot;:1,&quot;15&quot;:&quot;Arial&quot;,&quot;17&quot;:1}" data-sheets-textstyleruns="{&quot;1&quot;:0,&quot;2&quot;:{&quot;5&quot;:1}}{&quot;1&quot;:39}{&quot;1&quot;:108,&quot;2&quot;:{&quot;2&quot;:{&quot;1&quot;:2,&quot;2&quot;:16711680}}}{&quot;1&quot;:161}" style="color: rgb(0, 0, 0); font-size: 10pt; font-family: Arial;"><span style="font-size: 10pt;"><b>DESCRIPTION OF THIS TASK-</b><br>Store Type:</span><span style="font-size: 10pt;"> Earbud &amp; In-Ear Headphones, On-Ear Headphones, Over-Ear Headphones<br></span><span style="font-size: 10pt; color: rgb(255, 0, 0);">Restrictions: Seller's total sales are not more than 5,000</span><span style="font-size: 10pt;">.</span></span><br></p><br>
+                </div></td></tr><tr class="odd dt-hasChild shown"><td class="dtr-control">771</td><td>GPS, Finders &amp; Accessories Store</td><td>United States, United Kingdom, Canada</td><td>E-Commerce</td><td>Alibaba, Ebay, Etsy</td><td><button class="btn btn-link details-button" data-toggle="collapse" data-target="#details-undefined">Hide</button></td></tr><tr><td colspan="6"><div id="details-undefined" class="collapse">
+                    Details: <p><span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;DESCRIPTION OF THIS TASK- \r\nStore Type: GPS System Accessories, GPS Trackers, Item Finders, GPS Units, Vehicle GPS Units &amp; Equipment\r\nRestrictions: Sellers total sells not more than 5,000.&quot;}" data-sheets-userformat="{&quot;2&quot;:20609,&quot;3&quot;:{&quot;1&quot;:0},&quot;10&quot;:1,&quot;15&quot;:&quot;Arial&quot;,&quot;17&quot;:1}" data-sheets-textstyleruns="{&quot;1&quot;:0,&quot;2&quot;:{&quot;5&quot;:1}}{&quot;1&quot;:40}{&quot;1&quot;:134,&quot;2&quot;:{&quot;2&quot;:{&quot;1&quot;:2,&quot;2&quot;:4408131}}}" style="font-size: 10pt; font-family: Arial;"><span style="color: rgb(0, 0, 0); font-size: 10pt;"><b>DESCRIPTION OF THIS TASK-</b><br>Store Type: </span><span style="color: rgb(0, 0, 0); font-size: 10pt;">GPS System Accessories, GPS Trackers, Item Finders, GPS Units, Vehicle GPS Units &amp; Equipment<br></span><span style="font-size: 10pt;"><font color="#ff0000">Restrictions: Seller's total sales are not more than 5,000.</font></span></span><br></p><br>
+                </div></td></tr><tr class="even dt-hasChild shown"><td class="dtr-control">770</td><td>Computers &amp; Accessories Store</td><td>United States, United Kingdom, Canada</td><td>E-Commerce</td><td>Alibaba, Ebay, Etsy</td><td><button class="btn btn-link details-button" data-toggle="collapse" data-target="#details-undefined">Hide</button></td></tr><tr><td colspan="6"><div id="details-undefined" class="collapse">
+                    Details: <p><span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;DESCRIPTION OF THIS TASK- \r\nStore Type:\r\nComputer Accessories &amp; Peripherals, Computer Components, Computers &amp; Tablets, Data Storage, Laptop Accessories, Computer Monitors, Computer, Networking, Computer Servers, Tablet Accessories\r\nRestrictions: Sellers total sells not more than 5,000.&quot;}" data-sheets-userformat="{&quot;2&quot;:20865,&quot;3&quot;:{&quot;1&quot;:0},&quot;10&quot;:1,&quot;11&quot;:0,&quot;15&quot;:&quot;Arial&quot;,&quot;17&quot;:1}" data-sheets-textstyleruns="{&quot;1&quot;:0,&quot;2&quot;:{&quot;5&quot;:1}}{&quot;1&quot;:39}{&quot;1&quot;:232,&quot;2&quot;:{&quot;2&quot;:{&quot;1&quot;:2,&quot;2&quot;:16711680}}}" style="color: rgb(0, 0, 0); font-size: 10pt; font-family: Arial;"><span style="font-size: 10pt;"><b>DESCRIPTION OF THIS TASK-</b><br>Store Type:</span><span style="font-size: 10pt;"><br>Computer Accessories and peripherals, Computer Components, Computers and tablets, Data Storage, Laptop Accessories, Computer Monitors, Computer, Networking, Computer Servers, Tablet Accessories<br></span><span style="font-size: 10pt; color: rgb(255, 0, 0);">Restrictions: Seller's total sales are not more than 5,000.</span></span><br></p><br>
+                </div></td></tr><tr class="odd dt-hasChild shown"><td class="dtr-control">769</td><td>Vehicle Electronics Store</td><td>United States, United Kingdom, Canada</td><td>E-Commerce</td><td>Alibaba, Ebay, Etsy</td><td><button class="btn btn-link details-button" data-toggle="collapse" data-target="#details-undefined">Hide</button></td></tr><tr><td colspan="6"><div id="details-undefined" class="collapse">
+                    Details: <p><span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;DESCRIPTION OF THIS TASK- \nStore Type:\nAviation Electronics, Car Electronics, Marine Electronics, Powersports Electronics, Car Electronics Accessories, Vehicle GPS Units &amp; Equipment\nRestrictions: Sellers total sells not more than 5,000.&quot;}" data-sheets-userformat="{&quot;2&quot;:21121,&quot;3&quot;:{&quot;1&quot;:0},&quot;10&quot;:1,&quot;12&quot;:0,&quot;15&quot;:&quot;Arial&quot;,&quot;17&quot;:1}" data-sheets-textstyleruns="{&quot;1&quot;:0}{&quot;1&quot;:182,&quot;2&quot;:{&quot;2&quot;:{&quot;1&quot;:2,&quot;2&quot;:16711680}}}" style="color: rgb(0, 0, 0); font-size: 10pt; font-family: Arial;"><span style="font-size: 10pt;"><b>DESCRIPTION OF THIS TASK-</b><br>Store Type:<br>Aviation Electronics, Car Electronics, Marine Electronics, Powersports Electronics, Car Electronics Accessories, Vehicle GPS Units and equipment<br></span><span style="font-size: 10pt; color: rgb(255, 0, 0);">Restrictions: Seller's total sales are not more than 5,000.</span></span><br></p><br>
+                </div></td></tr><tr class="even dt-hasChild shown"><td class="dtr-control">768</td><td>Camera &amp; Photo Store</td><td>United States, United Kingdom, Canada</td><td>E-Commerce</td><td>Alibaba, Ebay, Etsy</td><td><button class="btn btn-link details-button" data-toggle="collapse" data-target="#details-undefined">Hide</button></td></tr><tr><td colspan="6"><div id="details-undefined" class="collapse">
+                    Details: <p><span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;DESCRIPTION OF THIS TASK- \nStore Type: Camera &amp; Photo Accessories, Camera Bags &amp; Cases, Binoculars, Telescopes &amp; Optics, Digital Cameras, Slide &amp; Negative, Scanners, Film Photography, Camera Flashes, Camcorder &amp; Camera Lenses, Lighting &amp; Studio Equipment, Photo Printers &amp; Scanners, Simulated Surveillance Cameras, Camera, Tripods &amp; Monopods, Underwater Photography Products,Video Equipment, Video Projectors, Video Surveillance Equipment\nRestrictions: Sellers total sells not more than 5,000. &quot;}" data-sheets-userformat="{&quot;2&quot;:21377,&quot;3&quot;:{&quot;1&quot;:0},&quot;10&quot;:1,&quot;11&quot;:0,&quot;12&quot;:0,&quot;15&quot;:&quot;Arial&quot;,&quot;17&quot;:1}" data-sheets-textstyleruns="{&quot;1&quot;:0}{&quot;1&quot;:439,&quot;2&quot;:{&quot;2&quot;:{&quot;1&quot;:2,&quot;2&quot;:16711680}}}" style="color: rgb(0, 0, 0); font-size: 10pt; font-family: Arial;"><span style="font-size: 10pt;"><b>DESCRIPTION OF THIS TASK-</b><br>Store Type: Camera &amp; Photo Accessories, Camera Bags &amp; Cases, Binoculars, Telescopes &amp; Optics, Digital Cameras, Slide &amp; Negative, Scanners, Film Photography, Camera Flashes, Camcorder &amp; Camera Lenses, Lighting &amp; Studio Equipment, Photo Printers &amp; Scanners, Simulated Surveillance Cameras, Camera, Tripods &amp; Monopods, Underwater Photography Products, Video Equipment, Video Projectors, Video Surveillance Equipment<br></span><span style="font-size: 10pt; color: rgb(255, 0, 0);">Restrictions: Seller's total sales are not more than 5,000.</span></span><br></p><br>
+                </div></td></tr><tr class="odd dt-hasChild shown"><td class="dtr-control">811</td><td>Digital Agency</td><td>United States, United Kingdom</td><td>ANY</td><td>ANY</td><td><button class="btn btn-link details-button" data-toggle="collapse" data-target="#details-undefined">Hide</button></td></tr><tr><td colspan="6"><div id="details-undefined" class="collapse">
+                    Details: <p><span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;DESCRIPTION OF THIS TASK- \nWebsite Type: Digital Marketing Agency, SEO Agency etc\nRestrictions: Websites age not more than 1 Years.&quot;}" data-sheets-userformat="{&quot;2&quot;:20609,&quot;3&quot;:{&quot;1&quot;:0},&quot;10&quot;:1,&quot;15&quot;:&quot;Arial&quot;,&quot;17&quot;:1}" data-sheets-textstyleruns="{&quot;1&quot;:0,&quot;2&quot;:{&quot;5&quot;:1}}{&quot;1&quot;:27}{&quot;1&quot;:82,&quot;2&quot;:{&quot;2&quot;:{&quot;1&quot;:2,&quot;2&quot;:16711680}}}" style="color: rgb(0, 0, 0); font-size: 10pt; font-family: Arial;"><span style="font-weight: bold; font-size: 10pt;">DESCRIPTION OF THIS TASK-<br></span><span style="font-size: 10pt;">Website Type: Digital Marketing Agency, SEO Agency, Etc.<br></span><span style="font-size: 10pt; color: rgb(255, 0, 0);">Restrictions: Websites age not more than 1 Year.</span></span><br></p><br>
+                </div></td></tr><tr class="even dt-hasChild shown"><td class="dtr-control">810</td><td>Real State Company</td><td>United States, United Kingdom</td><td>ANY</td><td>ANY</td><td><button class="btn btn-link details-button" data-toggle="collapse" data-target="#details-undefined">Hide</button></td></tr><tr><td colspan="6"><div id="details-undefined" class="collapse">
+                    Details: <p><span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;DESCRIPTION OF THIS TASK- \nWebsite Type: Real State Companies Website\nRestrictions: Websites age not more than 2 Years.&quot;}" data-sheets-userformat="{&quot;2&quot;:20609,&quot;3&quot;:{&quot;1&quot;:0},&quot;10&quot;:1,&quot;15&quot;:&quot;Arial&quot;,&quot;17&quot;:1}" data-sheets-textstyleruns="{&quot;1&quot;:0,&quot;2&quot;:{&quot;5&quot;:1}}{&quot;1&quot;:27}{&quot;1&quot;:70,&quot;2&quot;:{&quot;2&quot;:{&quot;1&quot;:2,&quot;2&quot;:16711680}}}" style="color: rgb(0, 0, 0); font-size: 10pt; font-family: Arial;"><span style="font-weight: bold; font-size: 10pt;">DESCRIPTION OF THIS TASK-<br></span><span style="font-size: 10pt;">Website Type: Real State Companies Website<br></span><span style="font-size: 10pt; color: rgb(255, 0, 0);">Restrictions: Websites age not more than 2 Years.</span></span><br></p><br>
+                </div></td></tr><tr class="odd dt-hasChild shown"><td class="dtr-control">809</td><td>Makeup Products</td><td>United States, United Kingdom</td><td>E-Commerce</td><td>Alibaba, Ebay, Etsy</td><td><button class="btn btn-link details-button" data-toggle="collapse" data-target="#details-undefined">Hide</button></td></tr><tr><td colspan="6"><div id="details-undefined" class="collapse">
+                    Details: <p><span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;DESCRIPTION OF THIS TASK- \nStore Type: Makeup Products Seller\nRestrictions: Sellers total sells not more than 3,000.&quot;}" data-sheets-userformat="{&quot;2&quot;:20609,&quot;3&quot;:{&quot;1&quot;:0},&quot;10&quot;:1,&quot;15&quot;:&quot;Arial&quot;,&quot;17&quot;:1}" data-sheets-textstyleruns="{&quot;1&quot;:0,&quot;2&quot;:{&quot;5&quot;:1}}{&quot;1&quot;:38}{&quot;1&quot;:62,&quot;2&quot;:{&quot;2&quot;:{&quot;1&quot;:2,&quot;2&quot;:16711680}}}" style="color: rgb(0, 0, 0); font-size: 10pt; font-family: Arial;"><span style="font-size: 10pt;"><b>DESCRIPTION OF THIS TASK-</b><br>Store Type:</span><span style="font-size: 10pt;"> Makeup Products Seller<br></span><span style="font-size: 10pt; color: rgb(255, 0, 0);">Restrictions: Seller's total sales are not more than 3,000.</span></span><br></p><br>
+                </div></td></tr><tr class="even dt-hasChild shown"><td class="dtr-control">808</td><td>Mugs &amp; Cups</td><td>United States, United Kingdom</td><td>E-Commerce</td><td>Alibaba, Ebay, Etsy</td><td><button class="btn btn-link details-button" data-toggle="collapse" data-target="#details-undefined">Hide</button></td></tr><tr><td colspan="6"><div id="details-undefined" class="collapse">
+                    Details: <p><span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;DESCRIPTION OF THIS TASK- \nStore Type: Mugs &amp; Cups Seller\nRestrictions: Sellers total sells not more than 3,000.&quot;}" data-sheets-userformat="{&quot;2&quot;:20609,&quot;3&quot;:{&quot;1&quot;:0},&quot;10&quot;:1,&quot;15&quot;:&quot;Arial&quot;,&quot;17&quot;:1}" data-sheets-textstyleruns="{&quot;1&quot;:0,&quot;2&quot;:{&quot;5&quot;:1}}{&quot;1&quot;:38}{&quot;1&quot;:58,&quot;2&quot;:{&quot;2&quot;:{&quot;1&quot;:2,&quot;2&quot;:16711680}}}" style="color: rgb(0, 0, 0); font-size: 10pt; font-family: Arial;"><span style="font-size: 10pt;"><b>DESCRIPTION OF THIS TASK-</b><br>Store Type:</span><span style="font-size: 10pt;"> Mugs &amp; Cups Seller<br></span><span style="font-size: 10pt; color: rgb(255, 0, 0);">Restrictions: Seller's total sales are not more than 3,000.</span></span><br></p><br>
+                </div></td></tr><tr class="odd dt-hasChild shown"><td class="dtr-control">804</td><td>Musical Instruments &amp; Gear</td><td>United States, United Kingdom</td><td>E-Commerce</td><td>Alibaba, Ebay, Etsy</td><td><button class="btn btn-link details-button" data-toggle="collapse" data-target="#details-undefined">Hide</button></td></tr><tr><td colspan="6"><div id="details-undefined" class="collapse">
+                    Details: <p><span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;DESCRIPTION OF THIS TASK- \nStore Type: Musical Instruments Seller.\nRestrictions: Sellers total sells not more than 1,000.&quot;}" data-sheets-userformat="{&quot;2&quot;:20609,&quot;3&quot;:{&quot;1&quot;:0},&quot;10&quot;:1,&quot;15&quot;:&quot;Arial&quot;,&quot;17&quot;:1}" data-sheets-textstyleruns="{&quot;1&quot;:0,&quot;2&quot;:{&quot;5&quot;:1}}{&quot;1&quot;:38}{&quot;1&quot;:67,&quot;2&quot;:{&quot;2&quot;:{&quot;1&quot;:2,&quot;2&quot;:16711680}}}" style="color: rgb(0, 0, 0); font-size: 10pt; font-family: Arial;"><span style="font-size: 10pt;"><b>DESCRIPTION OF THIS TASK-</b><br>Store Type:</span><span style="font-size: 10pt;"> Musical Instruments Seller.<br></span><span style="font-size: 10pt; color: rgb(255, 0, 0);">Restrictions: Seller's total sales are not more than 1,000.</span></span><br></p><br>
+                </div></td></tr><tr class="even dt-hasChild shown"><td class="dtr-control">803</td><td>Gift Cards &amp; Vouchers</td><td>United States, United Kingdom</td><td>ANY</td><td>ANY</td><td><button class="btn btn-link details-button" data-toggle="collapse" data-target="#details-undefined">Hide</button></td></tr><tr><td colspan="6"><div id="details-undefined" class="collapse">
+                    Details: <p><span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;DESCRIPTION OF THIS TASK- \nWebsite Type: Any Gift Cards &amp; Vouchers Seller \nRestrictions: Websites age not more than 2Years.&quot;}" data-sheets-userformat="{&quot;2&quot;:20609,&quot;3&quot;:{&quot;1&quot;:0},&quot;10&quot;:1,&quot;15&quot;:&quot;Arial&quot;,&quot;17&quot;:1}" data-sheets-textstyleruns="{&quot;1&quot;:0,&quot;2&quot;:{&quot;5&quot;:1}}{&quot;1&quot;:40}{&quot;1&quot;:75,&quot;2&quot;:{&quot;2&quot;:{&quot;1&quot;:2,&quot;2&quot;:16711680}}}" style="color: rgb(0, 0, 0); font-size: 10pt; font-family: Arial;"><span style="font-size: 10pt;"><b>DESCRIPTION OF THIS TASK-</b><br>Website Type:</span><span style="font-size: 10pt;"> Any Gift Cards &amp; Vouchers Seller<br></span><span style="font-size: 10pt; color: rgb(255, 0, 0);">Restrictions: Websites are not more than 2 years old.</span></span><br></p><br>
+                </div></td></tr><tr class="odd dt-hasChild shown"><td class="dtr-control">802</td><td>Gift Cards &amp; Vouchers</td><td>United States, United Kingdom</td><td>E-Commerce</td><td>Ebay, Etsy</td><td><button class="btn btn-link details-button" data-toggle="collapse" data-target="#details-undefined">Hide</button></td></tr><tr><td colspan="6"><div id="details-undefined" class="collapse">
+                    Details: <p><span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;DESCRIPTION OF THIS TASK- \nStore Type: Any Gift Cards &amp; Vouchers Seller\nRestrictions: Sellers total sells not more than 2,000.&quot;}" data-sheets-userformat="{&quot;2&quot;:20609,&quot;3&quot;:{&quot;1&quot;:0},&quot;10&quot;:1,&quot;15&quot;:&quot;Arial&quot;,&quot;17&quot;:1}" data-sheets-textstyleruns="{&quot;1&quot;:0,&quot;2&quot;:{&quot;5&quot;:1}}{&quot;1&quot;:38}{&quot;1&quot;:72,&quot;2&quot;:{&quot;2&quot;:{&quot;1&quot;:2,&quot;2&quot;:16711680}}}" style="color: rgb(0, 0, 0); font-size: 10pt; font-family: Arial;"><span style="font-size: 10pt;"><b>DESCRIPTION OF THIS TASK-</b><br>Store Type:</span><span style="font-size: 10pt;"> Any Gift Cards &amp; Vouchers Seller<br></span><span style="font-size: 10pt; color: rgb(255, 0, 0);">Restrictions: Seller's total sales are not more than 2,000.</span></span><br></p><br>
+                </div></td></tr><tr class="even dt-hasChild shown"><td class="dtr-control">800</td><td>Toys And Games</td><td>United States, United Kingdom, Canada</td><td>E-Commerce</td><td>Alibaba, Ebay, Etsy</td><td><button class="btn btn-link details-button" data-toggle="collapse" data-target="#details-undefined">Hide</button></td></tr><tr><td colspan="6"><div id="details-undefined" class="collapse">
+                    Details: <p><span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;DESCRIPTION OF THIS TASK- \nStore Type: Doll, Ball,Teddy Bear, Rubber Duck, Toy Car, Toy Train, Balloon, Sand Bucket\nRestrictions: Sellers total sells not more than 5,000.&quot;}" data-sheets-userformat="{&quot;2&quot;:20609,&quot;3&quot;:{&quot;1&quot;:0},&quot;10&quot;:1,&quot;15&quot;:&quot;Arial&quot;,&quot;17&quot;:1}" data-sheets-textstyleruns="{&quot;1&quot;:0,&quot;2&quot;:{&quot;5&quot;:1}}{&quot;1&quot;:38}{&quot;1&quot;:116,&quot;2&quot;:{&quot;2&quot;:{&quot;1&quot;:2,&quot;2&quot;:16711680}}}" style="color: rgb(0, 0, 0); font-size: 10pt; font-family: Arial;"><span style="font-size: 10pt;"><b>DESCRIPTION OF THIS TASK-</b><br>Store Type:</span><span style="font-size: 10pt;"> Doll, Ball, Teddy Bear, Rubber Duck, Toy Car, Toy Train, Balloon, Sand Bucket<br></span><span style="font-size: 10pt; color: rgb(255, 0, 0);">Restrictions: Seller's total sales are not more than 5,000.</span></span><br></p><br>
+                </div></td></tr><tr class="odd dt-hasChild shown"><td class="dtr-control">799</td><td>Sports and Outdoors</td><td>United States, United Kingdom, Australia</td><td>E-Commerce</td><td>Alibaba, Ebay, Etsy</td><td><button class="btn btn-link details-button" data-toggle="collapse" data-target="#details-undefined">Hide</button></td></tr><tr><td colspan="6"><div id="details-undefined" class="collapse">
+                    Details: <p><span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;DESCRIPTION OF THIS TASK- \nStore Type:  Outdoor Recreation, Fan Shop, Clothing, Exercise &amp; Fitness, Hunting &amp; Fishing, Memorabilia Display &amp; Storage, Sports &amp; Outdoor Recreation Accessories, Sports Medicine\nRestrictions: Sellers total sells not more than 3,000.&quot;}" data-sheets-userformat="{&quot;2&quot;:20865,&quot;3&quot;:{&quot;1&quot;:0},&quot;10&quot;:1,&quot;11&quot;:0,&quot;15&quot;:&quot;Arial&quot;,&quot;17&quot;:1}" data-sheets-textstyleruns="{&quot;1&quot;:0,&quot;2&quot;:{&quot;5&quot;:1}}{&quot;1&quot;:39}{&quot;1&quot;:207,&quot;2&quot;:{&quot;2&quot;:{&quot;1&quot;:2,&quot;2&quot;:16711680}}}" style="color: rgb(0, 0, 0); font-size: 10pt; font-family: Arial;"><span style="font-size: 10pt;"><b>DESCRIPTION OF THIS TASK-</b><br>Store Type: </span><span style="font-size: 10pt;">Outdoor Recreation, Fan Shop, Clothing, Exercise &amp; Fitness, Hunting &amp; Fishing, Memorabilia Display &amp; Storage, Sports &amp; Outdoor Recreation Accessories, Sports Medicine<br></span><span style="font-size: 10pt; color: rgb(255, 0, 0);">Restrictions: Seller's total sales are not more than 3,000.</span></span><br></p><br>
+                </div></td></tr><tr class="even dt-hasChild shown"><td class="dtr-control">798</td><td>Baby</td><td>United States, United Kingdom, Canada</td><td>E-Commerce</td><td>Alibaba, Ebay, Etsy</td><td><button class="btn btn-link details-button" data-toggle="collapse" data-target="#details-undefined">Hide</button></td></tr><tr><td colspan="6"><div id="details-undefined" class="collapse">
+                    Details: <p><span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;DESCRIPTION OF THIS TASK- \nStore Type: Activity &amp; Entertainment, Apparel &amp; Accessories, Baby &amp; Toddler Toys, Baby Care, Baby Stationery, Car Seats &amp; Accessories, Diapering, Feeding, Gifts, Nursery, Potty Training, Pregnancy &amp; Maternity, Safety, Strollers &amp; Accessories, Travel Gear\nRestrictions: Sellers total sells not more than 4,000.&quot;}" data-sheets-userformat="{&quot;2&quot;:20865,&quot;3&quot;:{&quot;1&quot;:0},&quot;10&quot;:1,&quot;11&quot;:0,&quot;15&quot;:&quot;Arial&quot;,&quot;17&quot;:1}" data-sheets-textstyleruns="{&quot;1&quot;:0,&quot;2&quot;:{&quot;5&quot;:1}}{&quot;1&quot;:39}{&quot;1&quot;:282,&quot;2&quot;:{&quot;2&quot;:{&quot;1&quot;:2,&quot;2&quot;:16711680}}}" style="color: rgb(0, 0, 0); font-size: 10pt; font-family: Arial;"><span style="font-size: 10pt;"><b>DESCRIPTION OF THIS TASK-</b><br>Store Type: </span><span style="font-size: 10pt;">Activity &amp; Entertainment, Apparel &amp; Accessories, Baby &amp; Toddler Toys, Baby Care, Baby Stationery, Car Seats &amp; Accessories, Diapering, Feeding, Gifts, Nursery, Potty Training, Pregnancy &amp; Maternity, Safety, Strollers &amp; Accessories, Travel Gear<br></span><span style="font-size: 10pt; color: rgb(255, 0, 0);">Restrictions: Seller's total sales are not more than 4,000.</span></span><br></p><br>
+                </div></td></tr><tr class="odd dt-hasChild shown"><td class="dtr-control">797</td><td>Automotive</td><td>United States, United Kingdom, Canada</td><td>E-Commerce</td><td>Alibaba, Ebay, Etsy</td><td><button class="btn btn-link details-button" data-toggle="collapse" data-target="#details-undefined">Hide</button></td></tr><tr><td colspan="6"><div id="details-undefined" class="collapse">
+                    Details: <p><span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;DESCRIPTION OF THIS TASK- \nStore Type: Car Care, Car Electronics &amp; Accessories, Exterior Accessories, Interior Accessories, Lights &amp; Lighting Accessories, Motorcycle &amp; Powersports\nOils &amp; Fluids, Paint &amp; Paint Supplies, Performance Parts &amp; Accessories, Replacement Parts, RV Parts &amp; Accessories, Tires &amp; Wheels, Tools &amp; Equipment\nRestrictions: Sellers total sells not more than 5,000.&quot;}" data-sheets-userformat="{&quot;2&quot;:21121,&quot;3&quot;:{&quot;1&quot;:0},&quot;10&quot;:1,&quot;12&quot;:0,&quot;15&quot;:&quot;Arial&quot;,&quot;17&quot;:1}" data-sheets-textstyleruns="{&quot;1&quot;:0}{&quot;1&quot;:329,&quot;2&quot;:{&quot;2&quot;:{&quot;1&quot;:2,&quot;2&quot;:16711680}}}" style="color: rgb(0, 0, 0); font-size: 10pt; font-family: Arial;"><span style="font-size: 10pt;"><b>DESCRIPTION OF THIS TASK-</b><br>Store Type: Car Care, Car Electronics &amp; Accessories, Exterior Accessories, Interior Accessories, Lights &amp; Lighting Accessories, Motorcycle &amp; Powersports<br>Oils &amp; Fluids, Paint &amp; Paint Supplies, Performance Parts &amp; Accessories, Replacement Parts, RV Parts &amp; Accessories, Tires &amp; Wheels, Tools &amp; Equipment<br></span><span style="font-size: 10pt; color: rgb(255, 0, 0);">Restrictions: Seller's total sales are not more than 5,000.</span></span><br></p><br>
+                </div></td></tr><tr class="even dt-hasChild shown"><td class="dtr-control">794</td><td>Pets Food Website</td><td>United States</td><td>ANY</td><td>ANY</td><td><button class="btn btn-link details-button" data-toggle="collapse" data-target="#details-undefined">Hide</button></td></tr><tr><td colspan="6"><div id="details-undefined" class="collapse">
+                    Details: <p><span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;DESCRIPTION OF THIS TASK- \nCompany Type: Pets Food Seller\nRestrictions: Websites age not more than 3Years.&quot;}" data-sheets-userformat="{&quot;2&quot;:20609,&quot;3&quot;:{&quot;1&quot;:0},&quot;10&quot;:1,&quot;15&quot;:&quot;Arial&quot;,&quot;17&quot;:1}" data-sheets-textstyleruns="{&quot;1&quot;:0,&quot;2&quot;:{&quot;5&quot;:1}}{&quot;1&quot;:27}{&quot;1&quot;:58,&quot;2&quot;:{&quot;2&quot;:{&quot;1&quot;:2,&quot;2&quot;:16711680}}}" style="color: rgb(0, 0, 0); font-size: 10pt; font-family: Arial;"><span style="font-size: 10pt;"><b>DESCRIPTION OF THIS TASK-</b><br></span><span style="font-size: 10pt;">Company Type: Pet Food Seller<br></span><span style="font-size: 10pt; color: rgb(255, 0, 0);">Restrictions: Websites are not more than 3 years old.</span></span><br></p><br>
+                </div></td></tr><tr class="odd dt-hasChild shown"><td class="dtr-control">792</td><td>Startup E-Commerce - Managers</td><td>United States, United Kingdom</td><td>Social Media</td><td>LinkedIN</td><td><button class="btn btn-link details-button" data-toggle="collapse" data-target="#details-undefined">Hide</button></td></tr><tr><td colspan="6"><div id="details-undefined" class="collapse">
+                    Details: <p><span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;DESCRIPTION OF THIS TASK- \nProfile Type: Running \&quot;Managing Director\&quot; Personal Profile. \nRestrictions: E-Commerce websites age not more than 3Years.&quot;}" data-sheets-userformat="{&quot;2&quot;:4225,&quot;3&quot;:{&quot;1&quot;:0},&quot;10&quot;:1,&quot;15&quot;:&quot;Arial&quot;}" data-sheets-textstyleruns="{&quot;1&quot;:0}{&quot;1&quot;:88,&quot;2&quot;:{&quot;2&quot;:{&quot;1&quot;:2,&quot;2&quot;:16711680}}}" style="color: rgb(0, 0, 0); font-size: 10pt; font-family: Arial;"><span style="font-size: 10pt;"><b>DESCRIPTION OF THIS TASK-</b><br>Profile Type: Running "Managing Director" Personal Profile.<br></span><span style="font-size: 10pt; color: rgb(255, 0, 0);">Restrictions: E-commerce websites are not more than 3 years old.</span></span><br></p><br>
+                </div></td></tr><tr class="even dt-hasChild shown"><td class="dtr-control">791</td><td>Startup E-Commerce - Managing Directors</td><td>United States, United Kingdom</td><td>Social Media</td><td>LinkedIN</td><td><button class="btn btn-link details-button" data-toggle="collapse" data-target="#details-undefined">Hide</button></td></tr><tr><td colspan="6"><div id="details-undefined" class="collapse">
+                    Details: <p><span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;DESCRIPTION OF THIS TASK- \nProfile Type: Running \&quot;Managing Director\&quot; Personal Profile. \nRestrictions: E-Commerce websites age not more than 3Years.&quot;}" data-sheets-userformat="{&quot;2&quot;:21121,&quot;3&quot;:{&quot;1&quot;:0},&quot;10&quot;:1,&quot;12&quot;:0,&quot;15&quot;:&quot;Arial&quot;,&quot;17&quot;:1}" data-sheets-textstyleruns="{&quot;1&quot;:0}{&quot;1&quot;:88,&quot;2&quot;:{&quot;2&quot;:{&quot;1&quot;:2,&quot;2&quot;:16711680}}}" style="color: rgb(0, 0, 0); font-size: 10pt; font-family: Arial;"><span style="font-size: 10pt;"><b>DESCRIPTION OF THIS TASK-</b><br>Profile Type: Running "Managing Director" Personal Profile.<br></span><span style="font-size: 10pt; color: rgb(255, 0, 0);">Restrictions: E-commerce websites are not more than 3 years old.</span></span><br></p><br>
+                </div></td></tr><tr class="odd dt-hasChild shown"><td class="dtr-control">790</td><td>Managers - Real State Companies</td><td>United States, United Kingdom</td><td>Social Media</td><td>LinkedIN</td><td><button class="btn btn-link details-button" data-toggle="collapse" data-target="#details-undefined">Hide</button></td></tr><tr><td colspan="6"><div id="details-undefined" class="collapse">
+                    Details: <p><span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;DESCRIPTION OF THIS TASK- \nProfile Type: Running \&quot;Marketing Manager\&quot; Personal Profile. \nRestrictions: Companies websites age not more than 3Years.&quot;}" data-sheets-userformat="{&quot;2&quot;:21121,&quot;3&quot;:{&quot;1&quot;:0},&quot;10&quot;:1,&quot;12&quot;:0,&quot;15&quot;:&quot;Arial&quot;,&quot;17&quot;:1}" data-sheets-textstyleruns="{&quot;1&quot;:0}{&quot;1&quot;:88,&quot;2&quot;:{&quot;2&quot;:{&quot;1&quot;:2,&quot;2&quot;:15352629}}}" style="color: rgb(0, 0, 0); font-size: 10pt; font-family: Arial;"><span style="font-size: 10pt;">DESCRIPTION OF THIS TASK-<br>Profile Type: Running "Marketing Manager" Personal Profile.<br></span><span style="font-size: 10pt; color: rgb(234, 67, 53);">Restrictions: Companies websites are not more than 3 years old.</span></span><br></p><br>
+                </div></td></tr><tr class="even dt-hasChild shown"><td class="dtr-control">788</td><td>Power Strips &amp; Surge Protectors Store</td><td>United States, United Kingdom, Canada</td><td>E-Commerce</td><td>Alibaba, Ebay, Etsy</td><td><button class="btn btn-link details-button" data-toggle="collapse" data-target="#details-undefined">Hide</button></td></tr><tr><td colspan="6"><div id="details-undefined" class="collapse">
+                    Details: <p><span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;DESCRIPTION OF THIS TASK- \r\nStore Type: Power Strips, Surge Protectors\r\nRestrictions: Sellers total sells not more than 5,000.&quot;}" data-sheets-userformat="{&quot;2&quot;:20609,&quot;3&quot;:{&quot;1&quot;:0},&quot;10&quot;:1,&quot;15&quot;:&quot;Arial&quot;,&quot;17&quot;:1}" data-sheets-textstyleruns="{&quot;1&quot;:0,&quot;2&quot;:{&quot;5&quot;:1}}{&quot;1&quot;:38}{&quot;1&quot;:72,&quot;2&quot;:{&quot;2&quot;:{&quot;1&quot;:2,&quot;2&quot;:16711680}}}" style="color: rgb(0, 0, 0); font-size: 10pt; font-family: Arial;"><span style="font-size: 10pt;"><b>DESCRIPTION OF THIS TASK-</b><br>Store Type</span><span style="font-size: 10pt;">: Power Strips, Surge Protectors<br></span><span style="font-size: 10pt; color: rgb(255, 0, 0);">Restrictions: Seller's total sales are not more than 5,000.</span></span><br></p><br>
+                </div></td></tr><tr class="odd dt-hasChild shown"><td class="dtr-control">787</td><td>Computer Monitors Store</td><td>United States, United Kingdom, Canada</td><td>E-Commerce</td><td>Alibaba, Ebay, Etsy</td><td><button class="btn btn-link details-button" data-toggle="collapse" data-target="#details-undefined">Hide</button></td></tr><tr><td colspan="6"><div id="details-undefined" class="collapse">
+                    Details: <p><span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;DESCRIPTION OF THIS TASK- \r\nStore Type:Computer Networking Hubs, Computer Networking Modems, Computer Network Adapters, Computer Networking Antennas, Computer Network Attached Storage, Computer Networking Transceivers, Computer Networking Print Servers, Repeaters, Computer Routers, Computer Networking Switches, Whole Home &amp; Mesh Wi-Fi Systems, Computer Networking Wireless Access Points\t\r\nRestrictions: Sellers total sells not more than 5,000.&quot;}" data-sheets-userformat="{&quot;2&quot;:20865,&quot;3&quot;:{&quot;1&quot;:0},&quot;10&quot;:1,&quot;11&quot;:0,&quot;15&quot;:&quot;Arial&quot;,&quot;17&quot;:1}" data-sheets-textstyleruns="{&quot;1&quot;:0,&quot;2&quot;:{&quot;5&quot;:1}}{&quot;1&quot;:39}{&quot;1&quot;:391,&quot;2&quot;:{&quot;2&quot;:{&quot;1&quot;:2,&quot;2&quot;:16711680}}}" style="color: rgb(0, 0, 0); font-size: 10pt; font-family: Arial;"><span style="font-size: 10pt;"><b>DESCRIPTION OF THIS TASK-</b><br>Store Type:&nbsp;</span><span style="font-size: 10pt;">Computer Networking Hubs, Computer Networking Modems, Computer Network Adapters, Computer Networking Antennas, Computer Network Attached Storage, Computer Networking Transceivers, Computer Networking Print Servers, Repeaters, Computer Routers, Computer Networking Switches, Whole Home and mesh Wi-Fi Systems, Computer Networking Wireless Access Points<br></span><span style="font-size: 10pt; color: rgb(255, 0, 0);">Restrictions: Seller's total sales are not more than 5,000.</span></span><br></p><br>
+                </div></td></tr><tr class="even dt-hasChild shown"><td class="dtr-control">786</td><td>Laptop Accessories Store</td><td>United States, United Kingdom, Canada</td><td>E-Commerce</td><td>Alibaba, Ebay, Etsy</td><td><button class="btn btn-link details-button" data-toggle="collapse" data-target="#details-undefined">Hide</button></td></tr><tr><td colspan="6"><div id="details-undefined" class="collapse">
+                    Details: <p><span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;DESCRIPTION OF THIS TASK- \r\nStore Type: Laptop Bags, Cases &amp; Sleeves, Laptop Chargers &amp; Adapters, Laptop Cooling Pads &amp; External Fans, Laptop Docking Stations\r\nLaptop Mounts, Laptop Screen Filters, Laptop Screen Protectors, Laptop Security Locks, Laptop Skins &amp; Decals, Laptop Stands\r\nRestrictions: Sellers total sells not more than 5,000.&quot;}" data-sheets-userformat="{&quot;2&quot;:20609,&quot;3&quot;:{&quot;1&quot;:0},&quot;10&quot;:1,&quot;15&quot;:&quot;Arial&quot;,&quot;17&quot;:1}" data-sheets-textstyleruns="{&quot;1&quot;:0,&quot;2&quot;:{&quot;5&quot;:1}}{&quot;1&quot;:39}{&quot;1&quot;:285,&quot;2&quot;:{&quot;2&quot;:{&quot;1&quot;:2,&quot;2&quot;:16711680}}}" style="color: rgb(0, 0, 0); font-size: 10pt; font-family: Arial;"><span style="font-size: 10pt;"><b>DESCRIPTION OF THIS TASK-</b><br>Store Type:</span><span style="font-size: 10pt;"> Laptop Bags, Cases &amp; Sleeves, Laptop Chargers &amp; Adapters, Laptop Cooling Pads &amp; External Fans, Laptop Docking Stations<br>Laptop Mounts, Laptop Screen Filters, Laptop Screen Protectors, Laptop Security Locks, Laptop Skins and decals, Laptop Stands<br></span><span style="font-size: 10pt; color: rgb(255, 0, 0);">Restrictions: Seller's total sales are not more than 5,000.</span></span><br></p><br>
+                </div></td></tr><tr class="odd dt-hasChild shown"><td class="dtr-control">785</td><td>Computer External Components Store</td><td>United States, United Kingdom, Canada</td><td>E-Commerce</td><td>Alibaba, Ebay, Etsy</td><td><button class="btn btn-link details-button" data-toggle="collapse" data-target="#details-undefined">Hide</button></td></tr><tr><td colspan="6"><div id="details-undefined" class="collapse">
+                    Details: <p><span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;DESCRIPTION OF THIS TASK- \r\nStore Type: Computer Cases,External Hard Drives, External Solid State Drives, External Sound Cards, External TV Tuners, KVM Switches, External Optical Drives\r\nRestrictions: Sellers total sells not more than 5,000.&quot;}" data-sheets-userformat="{&quot;2&quot;:20865,&quot;3&quot;:{&quot;1&quot;:0},&quot;10&quot;:1,&quot;11&quot;:0,&quot;15&quot;:&quot;Arial&quot;,&quot;17&quot;:1}" data-sheets-textstyleruns="{&quot;1&quot;:0,&quot;2&quot;:{&quot;5&quot;:1}}{&quot;1&quot;:39}{&quot;1&quot;:187,&quot;2&quot;:{&quot;2&quot;:{&quot;1&quot;:2,&quot;2&quot;:16711680}}}" style="color: rgb(0, 0, 0); font-size: 10pt; font-family: Arial;"><span style="font-size: 10pt;"><b>DESCRIPTION OF THIS TASK-</b><br>Store Type:</span><span style="font-size: 10pt;"> Computer Cases, External Hard Drives, External Solid State Drives, External Sound Cards, External TV Tuners, KVM Switches, External Optical Drives<br></span><span style="font-size: 10pt; color: rgb(255, 0, 0);">Restrictions: Seller's total sales are not more than 5,000.</span></span><br></p><br>
+                </div></td></tr><tr class="even dt-hasChild shown"><td class="dtr-control">784</td><td>Data Storage Store</td><td>United States, United Kingdom, Canada</td><td>E-Commerce</td><td>Alibaba, Ebay, Etsy</td><td><button class="btn btn-link details-button" data-toggle="collapse" data-target="#details-undefined">Hide</button></td></tr><tr><td colspan="6"><div id="details-undefined" class="collapse">
+                    Details: <p><span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;DESCRIPTION OF THIS TASK- \r\nStore Type: External Hard Drives, External Solid State Drives, Floppy &amp; Tape Drives, Internal Hard Drives, Internal Solid State Drives, Computer Network Attached Storage, USB Flash Drives\r\nRestrictions: Sellers total sells not more than 5,000.&quot;}" data-sheets-userformat="{&quot;2&quot;:20865,&quot;3&quot;:{&quot;1&quot;:0},&quot;10&quot;:1,&quot;11&quot;:0,&quot;15&quot;:&quot;Arial&quot;,&quot;17&quot;:1}" data-sheets-textstyleruns="{&quot;1&quot;:0,&quot;2&quot;:{&quot;5&quot;:1}}{&quot;1&quot;:39}{&quot;1&quot;:217,&quot;2&quot;:{&quot;2&quot;:{&quot;1&quot;:2,&quot;2&quot;:16711680}}}" style="color: rgb(0, 0, 0); font-size: 10pt; font-family: Arial;"><span style="font-size: 10pt;"><b>DESCRIPTION OF THIS TASK-</b><br>Store Type:</span><span style="font-size: 10pt;"> External Hard Drives, External Solid State Drives, Floppy and tape Drives, Internal Hard Drives, Internal Solid State Drives, Computer Network Attached Storage, USB Flash Drives<br></span><span style="font-size: 10pt; color: rgb(255, 0, 0);">Restrictions: Seller's total sales are not more than 5,000.</span></span><br></p><br>
+                </div></td></tr><tr class="odd dt-hasChild shown"><td class="dtr-control">783</td><td>Computers &amp; Tablets Store</td><td>United States, United Kingdom, Canada</td><td>E-Commerce</td><td>Alibaba, Ebay, Etsy</td><td><button class="btn btn-link details-button" data-toggle="collapse" data-target="#details-undefined">Hide</button></td></tr><tr><td colspan="6"><div id="details-undefined" class="collapse">
+                    Details: <p><span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;DESCRIPTION OF THIS TASK- \r\nStore Type: Desktop Computers, Laptop Computers, Computer Tablets\r\nRestrictions: Sellers total sells not more than 5,000.&quot;}" data-sheets-userformat="{&quot;2&quot;:20609,&quot;3&quot;:{&quot;1&quot;:0},&quot;10&quot;:1,&quot;15&quot;:&quot;Arial&quot;,&quot;17&quot;:1}" data-sheets-textstyleruns="{&quot;1&quot;:0,&quot;2&quot;:{&quot;5&quot;:1}}{&quot;1&quot;:38}{&quot;1&quot;:95,&quot;2&quot;:{&quot;2&quot;:{&quot;1&quot;:2,&quot;2&quot;:16711680}}}" style="color: rgb(0, 0, 0); font-size: 10pt; font-family: Arial;"><span style="font-size: 10pt;"><b>DESCRIPTION OF THIS TASK-</b><br>Store Type</span><span style="font-size: 10pt;">: Desktop Computers, Laptop Computers, Computer Tablets<br></span><span style="font-size: 10pt; color: rgb(255, 0, 0);">Restrictions: Seller's total sales are not more than 5,000.</span></span><br></p><br>
+                </div></td></tr><tr class="even dt-hasChild shown"><td class="dtr-control">782</td><td>Computer Components Store</td><td>United States, United Kingdom, Canada</td><td>E-Commerce</td><td>Alibaba, Ebay, Etsy</td><td><button class="btn btn-link details-button" data-toggle="collapse" data-target="#details-undefined">Hide</button></td></tr><tr><td colspan="6"><div id="details-undefined" class="collapse">
+                    Details: <p><span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;DESCRIPTION OF THIS TASK- \nStore Type: Desktop Barebones, Computer External Components, Computer Internal Components, Laptop Computer Replacement Partsc, Single Board, Computers          \nRestrictions: Sellers total sells not more than 5,000.&quot;}" data-sheets-userformat="{&quot;2&quot;:20865,&quot;3&quot;:{&quot;1&quot;:0},&quot;10&quot;:1,&quot;11&quot;:0,&quot;15&quot;:&quot;Arial&quot;,&quot;17&quot;:1}" data-sheets-textstyleruns="{&quot;1&quot;:0,&quot;2&quot;:{&quot;5&quot;:1}}{&quot;1&quot;:38}{&quot;1&quot;:188,&quot;2&quot;:{&quot;2&quot;:{&quot;1&quot;:2,&quot;2&quot;:16711680}}}" style="color: rgb(0, 0, 0); font-size: 10pt; font-family: Arial;"><span style="font-size: 10pt;"><b>DESCRIPTION OF THIS TASK-</b><br>Store Type:</span><span style="font-size: 10pt;"> Desktop Barebones, Computer External Components, Computer Internal Components, Laptop Computer Replacement Parts, Single Board, Computers<br></span><span style="font-size: 10pt; color: rgb(255, 0, 0);">Restrictions: Seller's total sales are not more than 5,000.</span></span><br></p><br>
+                </div></td></tr><tr class="odd dt-hasChild shown"><td class="dtr-control">781</td><td>Computer Accessories &amp; Peripherals Store</td><td>United States, United Kingdom, Canada</td><td>E-Commerce</td><td>Alibaba, Ebay, Etsy</td><td><button class="btn btn-link details-button" data-toggle="collapse" data-target="#details-undefined">Hide</button></td></tr><tr><td colspan="6"><div id="details-undefined" class="collapse">
+                    Details: <p><span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;DESCRIPTION OF THIS TASK- \nStore Type: Computer Audio &amp; Video Accessories, Blank Media Products, Computer Security Cables, Cables &amp; Accessories, Computer Cleaning &amp; Repair\nComputer Cable Adapters, Computer Game Hardware, Computer Hard Drive Accessories, Computer Input Devices, Computer Keyboards, Mice &amp; Accessories\nComputer Memory Card Accessories, Memory Cards, Computer Monitor Accessories, Computer Printer Parts &amp; Accessories, Computer Printer Ink &amp; Toner\nComputer Racks &amp; Cabinets, Computer Uninterruptible Power Supply Units, USB Gadgets, USB Hubs, Projector Accessories           \nRestrictions: Sellers total sells not more than 5,000.&quot;}" data-sheets-userformat="{&quot;2&quot;:21377,&quot;3&quot;:{&quot;1&quot;:0},&quot;10&quot;:1,&quot;11&quot;:0,&quot;12&quot;:0,&quot;15&quot;:&quot;Arial&quot;,&quot;17&quot;:1}" data-sheets-textstyleruns="{&quot;1&quot;:0}{&quot;1&quot;:590,&quot;2&quot;:{&quot;2&quot;:{&quot;1&quot;:2,&quot;2&quot;:16711680}}}" style="color: rgb(0, 0, 0); font-size: 10pt; font-family: Arial;"><span style="font-size: 10pt;"><b>DESCRIPTION OF THIS TASK-</b><br>Store Type: Computer Audio and Video Accessories, Blank Media Products, Computer Security Cables, Cables and accessories, Computer Cleaning and repair<br>Computer Cable Adapters, Computer Game Hardware, Computer Hard Drive Accessories, Computer Input Devices, Computer Keyboards, Mice and accessories<br>Computer Memory Card Accessories, Memory Cards, Computer Monitor Accessories, Computer Printer Parts and accessories, Computer Printer Ink and toner<br>Computer Racks and cabinets, Computer Uninterruptible Power Supply Units, USB Gadgets, USB Hubs, Projector Accessories<br></span><span style="font-size: 10pt; color: rgb(255, 0, 0);">Restrictions: Seller's total sales are not more than 5,000.</span></span><br></p><br>
+                </div></td></tr><tr class="even dt-hasChild shown"><td class="dtr-control">780</td><td>Wearable Technology Store</td><td>United States, United Kingdom, Canada</td><td>E-Commerce</td><td>Alibaba, Ebay, Etsy</td><td><button class="btn btn-link details-button" data-toggle="collapse" data-target="#details-undefined">Hide</button></td></tr><tr><td colspan="6"><div id="details-undefined" class="collapse">
+                    Details: <p><span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;DESCRIPTION OF THIS TASK- \r\nStore Type: Smart Clips, Arm &amp; Wristbands, Smart Glasses, Smartwatches, Wearable Tech Virtual Reality Gear, Activity &amp; Fitness Trackers\t\r\nSmart Arm &amp; Wristband Accessories, Single Ear Bluetooth Cell Phone Headsets, Smartwatch Accessories, Cell Phone Virtual Reality (VR) Headsets\t   \t\r\nRestrictions: Sellers total sells not more than 5,000.&quot;}" data-sheets-userformat="{&quot;2&quot;:20865,&quot;3&quot;:{&quot;1&quot;:0},&quot;10&quot;:1,&quot;11&quot;:0,&quot;15&quot;:&quot;Arial&quot;,&quot;17&quot;:1}" data-sheets-textstyleruns="{&quot;1&quot;:0,&quot;2&quot;:{&quot;5&quot;:1}}{&quot;1&quot;:39}{&quot;1&quot;:314,&quot;2&quot;:{&quot;2&quot;:{&quot;1&quot;:2,&quot;2&quot;:16711680}}}" style="color: rgb(0, 0, 0); font-size: 10pt; font-family: Arial;"><span style="font-size: 10pt;"><b>DESCRIPTION OF THIS TASK-</b><br>Store Type:</span><span style="font-size: 10pt;"> Smart Clips, Arm and wristbands, Smart Glasses, Smartwatches, Wearable Tech Virtual Reality Gear, Activity and fitness Trackers<br>Smart Arm &amp; Wristband Accessories, Single Ear Bluetooth Cell Phone Headsets, Smartwatch Accessories, Cell Phone Virtual Reality (VR) Headsets<br></span><span style="font-size: 10pt; color: rgb(255, 0, 0);">Restrictions: Seller's total sales are not more than 5,000.</span></span><br></p><br>
+                </div></td></tr><tr class="odd dt-hasChild shown"><td class="dtr-control">779</td><td>Video Projectors Store</td><td>United States, United Kingdom, Canada</td><td>E-Commerce</td><td>Alibaba, Ebay, Etsy</td><td><button class="btn btn-link details-button" data-toggle="collapse" data-target="#details-undefined">Hide</button></td></tr><tr><td colspan="6"><div id="details-undefined" class="collapse">
+                    Details: <p><span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;DESCRIPTION OF THIS TASK- \nStore Type: Video Projectors Restrictions: Sellers total sells not more than 5,000.&quot;}" data-sheets-userformat="{&quot;2&quot;:4225,&quot;3&quot;:{&quot;1&quot;:0},&quot;10&quot;:1,&quot;15&quot;:&quot;Arial&quot;}" data-sheets-textstyleruns="{&quot;1&quot;:0}{&quot;1&quot;:56,&quot;2&quot;:{&quot;2&quot;:{&quot;1&quot;:2,&quot;2&quot;:16711680}}}" style="color: rgb(0, 0, 0); font-size: 10pt; font-family: Arial;"><span style="font-size: 10pt;">DESCRIPTION OF THIS TASK-<br>Store Type: Video Projectors</span></span></p><p><span style="color: rgb(255, 0, 0); font-size: 10pt; font-family: Arial;">Restrictions: Seller's total sales are not more than 5,000.</span></p><br>
+                </div></td></tr><tr class="even dt-hasChild shown"><td class="dtr-control">778</td><td>Video Game Consoles &amp; Accessories Store</td><td>United States, United Kingdom, Canada</td><td>E-Commerce</td><td>Alibaba, Ebay, Etsy</td><td><button class="btn btn-link details-button" data-toggle="collapse" data-target="#details-undefined">Hide</button></td></tr><tr><td colspan="6"><div id="details-undefined" class="collapse">
+                    Details: <p><span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;DESCRIPTION OF THIS TASK- \nStore Type: PlayStation 4 Consoles &amp; Accessories ,PlayStation 3 Consoles &amp; Accessories , Xbox One Consoles &amp; Accessories, Xbox 360 Consoles &amp; Accessories, Nintendo Switch Consoles &amp; Accessories, Wii U Consoles &amp; Accessories, Wii Consoles &amp; Accessories, Nintendo 3DS Consoles &amp; Accessories, Nintendo DS Consoles &amp; Accessories, PlayStation Vita Consoles &amp; Accessories, Sony PSP Consoles &amp; Accessories        \nRestrictions: Sellers total sells not more than 5,000.&quot;}" data-sheets-userformat="{&quot;2&quot;:20865,&quot;3&quot;:{&quot;1&quot;:0},&quot;10&quot;:1,&quot;11&quot;:0,&quot;15&quot;:&quot;Arial&quot;,&quot;17&quot;:1}" data-sheets-textstyleruns="{&quot;1&quot;:0,&quot;2&quot;:{&quot;5&quot;:1}}{&quot;1&quot;:38}{&quot;1&quot;:427,&quot;2&quot;:{&quot;2&quot;:{&quot;1&quot;:2,&quot;2&quot;:16711680}}}" style="color: rgb(0, 0, 0); font-size: 10pt; font-family: Arial;"><span style="font-size: 10pt;"><b>DESCRIPTION OF THIS TASK-</b><br>Store Type:</span><span style="font-size: 10pt;"> PlayStation 4 Consoles &amp; Accessories ,PlayStation 3 Consoles &amp; Accessories , Xbox One Consoles &amp; Accessories, Xbox 360 Consoles &amp; Accessories, Nintendo Switch Consoles &amp; Accessories, Wii U Consoles &amp; Accessories, Wii Consoles &amp; Accessories, Nintendo 3DS Consoles &amp; Accessories, Nintendo DS Consoles &amp; Accessories, PlayStation Vita Consoles &amp; Accessories, Sony PSP Consoles &amp; Accessories</span><span style="font-size: 10pt; color: rgb(255, 0, 0);"><br>Restrictions: Seller's total sales are not more than 5,000.</span></span><br></p><br>
+                </div></td></tr><tr class="odd dt-hasChild shown"><td class="dtr-control">777</td><td>Televisions &amp; Video Products Store</td><td>United States, United Kingdom, Canada</td><td>E-Commerce</td><td>Alibaba, Ebay, Etsy</td><td><button class="btn btn-link details-button" data-toggle="collapse" data-target="#details-undefined">Hide</button></td></tr><tr><td colspan="6"><div id="details-undefined" class="collapse">
+                    Details: <p><span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;DESCRIPTION OF THIS TASK- \nStore Type: Home Theater Accessories, Audio/Video Receivers &amp; Amplifiers, Blu-ray Players &amp; Recorders, DVD Players &amp; Recorders, Satellite , Television Products, Streaming Media Players, Televisions, Video Display Glasses\nRestrictions: Sellers total sells not more than 5,000.&quot;}" data-sheets-userformat="{&quot;2&quot;:20865,&quot;3&quot;:{&quot;1&quot;:0},&quot;10&quot;:1,&quot;11&quot;:0,&quot;15&quot;:&quot;Arial&quot;,&quot;17&quot;:1}" data-sheets-textstyleruns="{&quot;1&quot;:0,&quot;2&quot;:{&quot;5&quot;:1}}{&quot;1&quot;:38}{&quot;1&quot;:248,&quot;2&quot;:{&quot;2&quot;:{&quot;1&quot;:2,&quot;2&quot;:16711680}}}" style="color: rgb(0, 0, 0); font-size: 10pt; font-family: Arial;"><span style="font-size: 10pt;"><b>DESCRIPTION OF THIS TASK-</b><br>Store Type:</span><span style="font-size: 10pt;"> Home Theater Accessories, Audio/Video Receivers and amplifiers, Blu-ray Players and recorders, DVD Players and recorders, Satellite , Television Products, Streaming Media Players, Televisions, Video Display Glasses<br></span><span style="font-size: 10pt; color: rgb(255, 0, 0);">Restrictions: Seller's total sales are not more than 5,000.</span></span><br></p><br>
+                </div></td></tr><tr class="even dt-hasChild shown"><td class="dtr-control">776</td><td>Security &amp; Surveillance Equipment Store</td><td>United States, United Kingdom, Canada</td><td>E-Commerce</td><td>Alibaba, Ebay, Etsy</td><td><button class="btn btn-link details-button" data-toggle="collapse" data-target="#details-undefined">Hide</button></td></tr><tr><td colspan="6"><div id="details-undefined" class="collapse">
+                    Details: <p><span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;DESCRIPTION OF THIS TASK- \r\nStore Type: Security &amp; Surveillance Accessories, Security &amp; Surveillance Biometrics, Home Security Systems, Security Horns &amp; Sirens, Motion Detectors, Surveillance Video Equipment\r\nRestrictions: Sellers total sells not more than 5,000.&quot;}" data-sheets-userformat="{&quot;2&quot;:20865,&quot;3&quot;:{&quot;1&quot;:0},&quot;10&quot;:1,&quot;11&quot;:0,&quot;15&quot;:&quot;Arial&quot;,&quot;17&quot;:1}" data-sheets-textstyleruns="{&quot;1&quot;:0,&quot;2&quot;:{&quot;5&quot;:1}}{&quot;1&quot;:26}{&quot;1&quot;:28,&quot;2&quot;:{&quot;5&quot;:1}}{&quot;1&quot;:39}{&quot;1&quot;:209,&quot;2&quot;:{&quot;2&quot;:{&quot;1&quot;:2,&quot;2&quot;:16711680}}}" style="color: rgb(0, 0, 0); font-size: 10pt; font-family: Arial;"><span style="font-size: 10pt;"><b>DESCRIPTION OF THIS TASK-</b></span><span style="font-size: 10pt;"><br></span><span style="font-size: 10pt;">Store Type:</span><span style="font-size: 10pt;"> Security &amp; Surveillance Accessories, Security &amp; Surveillance Biometrics, Home Security Systems, Security Horns &amp; Sirens, Motion Detectors, Surveillance Video Equipment<br></span><span style="font-size: 10pt; color: rgb(255, 0, 0);">Restrictions: Seller's total sales are not more than 5,000.</span></span><br></p><br>
+                </div></td></tr><tr class="odd dt-hasChild shown"><td class="dtr-control">775</td><td>Portable Audio &amp; Video Store</td><td>United States, United Kingdom, Canada</td><td>E-Commerce</td><td>Alibaba, Ebay, Etsy</td><td><button class="btn btn-link details-button" data-toggle="collapse" data-target="#details-undefined">Hide</button></td></tr><tr><td colspan="6"><div id="details-undefined" class="collapse">
+                    Details: <p><span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;DESCRIPTION OF THIS TASK- \nStore Type: Boomboxes, Portable Cassette Players &amp; Recorders, CB &amp; Two-Way RadiosDigital Voice Recorders, Portable Microcassette Recorders, MP3 &amp; MP4 Player Accessories, MP3 &amp; MP4 Players, Portable CD Players, Portable DVD Players, Portable Cell Phone &amp; MP3 Player Speakers &amp; Audio Docks, Portable Radios\nRestrictions: Sellers total sells not more than 5,000.&quot;}" data-sheets-userformat="{&quot;2&quot;:21377,&quot;3&quot;:{&quot;1&quot;:0},&quot;10&quot;:1,&quot;11&quot;:0,&quot;12&quot;:0,&quot;15&quot;:&quot;Arial&quot;,&quot;17&quot;:1}" data-sheets-textstyleruns="{&quot;1&quot;:0}{&quot;1&quot;:332,&quot;2&quot;:{&quot;2&quot;:{&quot;1&quot;:2,&quot;2&quot;:16711680}}}" style="color: rgb(0, 0, 0); font-size: 10pt; font-family: Arial;"><span style="font-size: 10pt;"><b>DESCRIPTION OF THIS TASK-</b><br>Store Type: Boomboxes, Portable Cassette Players &amp; Recorders, CB &amp; Two-Way Radios Digital Voice Recorders, Portable Microcassette Recorders, MP3 &amp; MP4 Player Accessories, MP3 &amp; MP4 Players, Portable CD Players, Portable DVD Players, Portable Cell Phone &amp; MP3 Player Speakers &amp; Audio Docks, Portable Radios<br></span><span style="font-size: 10pt; color: rgb(255, 0, 0);">Restrictions: Seller's total sales are not more than 5,000.</span></span><br></p><br>
+                </div></td></tr><tr class="even dt-hasChild shown"><td class="dtr-control">774</td><td>Office Electronics Products Store</td><td>United States, United Kingdom, Canada</td><td>E-Commerce</td><td>Alibaba, Ebay, Etsy</td><td><button class="btn btn-link details-button" data-toggle="collapse" data-target="#details-undefined">Hide</button></td></tr><tr><td colspan="6"><div id="details-undefined" class="collapse">
+                    Details: <p><span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;DESCRIPTION OF THIS TASK- \nStore Type: Office Calculators, Office Copiers, Document Cameras, Dictionaries, Thesauri &amp; Translators, Other Office Equipment, Handhelds &amp; PDAs\nPoint-of-Sale (POS) Equipment, Office Presentation Products, Computer Printers, Printers &amp; Accessories, Video Projectors, Computer Scanners,Scanners &amp; Accessories, Telephones\nRestrictions: Sellers total sells not more than 5,000.&quot;}" data-sheets-userformat="{&quot;2&quot;:21377,&quot;3&quot;:{&quot;1&quot;:0},&quot;10&quot;:1,&quot;11&quot;:0,&quot;12&quot;:0,&quot;15&quot;:&quot;Arial&quot;,&quot;17&quot;:1}" data-sheets-textstyleruns="{&quot;1&quot;:0}{&quot;1&quot;:347,&quot;2&quot;:{&quot;2&quot;:{&quot;1&quot;:2,&quot;2&quot;:16711680}}}" style="color: rgb(0, 0, 0); font-size: 10pt; font-family: Arial;"><span style="font-size: 10pt;"><b>DESCRIPTION OF THIS TASK-</b><br>Store Type: Office Calculators, Office Copiers, Document Cameras, Dictionaries, Thesauri &amp; Translators, Other Office Equipment, Handhelds &amp; PDAs<br>Point-of-sale (POS) Equipment, Office Presentation Products, Computer Printers, Printers and accessories, Video Projectors, Computer Scanners, Scanners and accessories, Telephones<br></span><span style="font-size: 10pt; color: rgb(255, 0, 0);">Restrictions: Seller's total sales are not more than 5,000.</span></span><br></p><br>
+                </div></td></tr><tr class="odd dt-hasChild shown"><td class="dtr-control">767</td><td>Electronics Accessories &amp; Supplies Store</td><td>United States, United Kingdom, Germany, France</td><td>E-Commerce</td><td>Alibaba, Ebay, Etsy</td><td><button class="btn btn-link details-button" data-toggle="collapse" data-target="#details-undefined">Hide</button></td></tr><tr><td colspan="6"><div id="details-undefined" class="collapse">
+                    Details: <p><span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;DESCRIPTION OF THIS TASK- Store Type: Office Electronics Accessories, Car Electronics Accessories, Power Strips &amp; Surge Protectors, Telephone Accessories, Electronics Cables, Electronics Mounts, Recording Microphones &amp; Accessories, Electronics Power Protection,  Products, Electrical Cord Management.\nRestrictions: Sellers total sells not more than 5,000. &quot;}" data-sheets-userformat="{&quot;2&quot;:4993,&quot;3&quot;:{&quot;1&quot;:0},&quot;10&quot;:1,&quot;11&quot;:0,&quot;12&quot;:0,&quot;15&quot;:&quot;Lexend&quot;}" data-sheets-textstyleruns="{&quot;1&quot;:0,&quot;2&quot;:{&quot;5&quot;:1}}{&quot;1&quot;:26}{&quot;1&quot;:301,&quot;2&quot;:{&quot;2&quot;:{&quot;1&quot;:2,&quot;2&quot;:16711680}}}" style="color: rgb(0, 0, 0); font-size: 10pt; font-family: Lexend, Arial;"><span style="font-size: 10pt;"><b>DESCRIPTION OF THIS TASK-&nbsp; </b></span><span style="font-size: 10pt; font-weight: bold;">&nbsp;</span></span></p><p><span style="text-align: var(--bs-body-text-align); background-color: var(--bs-card-bg); font-size: 10pt; color: rgb(0, 0, 0); font-family: Lexend, Arial;">Store&nbsp; Type: Office Electronics Accessories, Car Electronics Accessories,&nbsp;</span><span style="text-align: var(--bs-body-text-align); background-color: var(--bs-card-bg); color: rgb(0, 0, 0); font-family: Lexend, Arial; font-size: 10pt;">Power Strips and surge Protectors, Telephone Accessories, Electronics Cables, Electronics Mounts, Recording Microphones and accessories, Electronics Power Protection, Products, Electrical Cord Management.</span></p><p><span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;DESCRIPTION OF THIS TASK- Store Type: Office Electronics Accessories, Car Electronics Accessories, Power Strips &amp; Surge Protectors, Telephone Accessories, Electronics Cables, Electronics Mounts, Recording Microphones &amp; Accessories, Electronics Power Protection,  Products, Electrical Cord Management.\nRestrictions: Sellers total sells not more than 5,000. &quot;}" data-sheets-userformat="{&quot;2&quot;:4993,&quot;3&quot;:{&quot;1&quot;:0},&quot;10&quot;:1,&quot;11&quot;:0,&quot;12&quot;:0,&quot;15&quot;:&quot;Lexend&quot;}" data-sheets-textstyleruns="{&quot;1&quot;:0,&quot;2&quot;:{&quot;5&quot;:1}}{&quot;1&quot;:26}{&quot;1&quot;:301,&quot;2&quot;:{&quot;2&quot;:{&quot;1&quot;:2,&quot;2&quot;:16711680}}}" style="color: rgb(0, 0, 0); font-size: 10pt; font-family: Lexend, Arial;"><span style="font-size: 10pt; color: rgb(255, 0, 0);"><b>Restrictions: Seller's total sales are not more than 5,000.</b></span></span><br></p><br>
+                </div></td></tr><tr class="even dt-hasChild shown"><td class="dtr-control">766</td><td>Beauty Products Website</td><td>United States</td><td>ANY</td><td>ANY</td><td><button class="btn btn-link details-button" data-toggle="collapse" data-target="#details-undefined">Hide</button></td></tr><tr><td colspan="6"><div id="details-undefined" class="collapse">
+                    Details: <p><span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;DESCRIPTION OF THIS TASK- \nWebsite Type: Beauty Products Seller \nRestrictions: Websites age not more than 3Years.&quot;}" data-sheets-userformat="{&quot;2&quot;:20609,&quot;3&quot;:{&quot;1&quot;:0},&quot;10&quot;:1,&quot;15&quot;:&quot;Arial&quot;,&quot;17&quot;:1}" data-sheets-textstyleruns="{&quot;1&quot;:0,&quot;2&quot;:{&quot;5&quot;:1}}{&quot;1&quot;:27}{&quot;1&quot;:65,&quot;2&quot;:{&quot;2&quot;:{&quot;1&quot;:2,&quot;2&quot;:16711680}}}" style="color: rgb(0, 0, 0); font-size: 10pt; font-family: Arial;"><span style="font-size: 10pt;"><b>DESCRIPTION OF THIS TASK-</b><br></span><span style="font-size: 10pt;">Website Type: Beauty Products Seller<br></span><span style="font-size: 10pt; color: rgb(255, 0, 0);">Restrictions: Websites age not more than 3Years.</span></span><br></p><br>
+                </div></td></tr><tr class="odd dt-hasChild shown"><td class="dtr-control">765</td><td>CEO'S of Real Estate Companies</td><td>United States, United Kingdom</td><td>Social Media</td><td>LinkedIN</td><td><button class="btn btn-link details-button" data-toggle="collapse" data-target="#details-undefined">Hide</button></td></tr><tr><td colspan="6"><div id="details-undefined" class="collapse">
+                    Details: <p><span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;DESCRIPTION OF THIS TASK- \nProfile Type: Running \&quot;CEO\&quot; Personal Profile. \nRestrictions: Companies website age not more than 3Years.&quot;}" data-sheets-userformat="{&quot;2&quot;:21123,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:3,&quot;3&quot;:2},&quot;10&quot;:1,&quot;12&quot;:0,&quot;15&quot;:&quot;Arial&quot;,&quot;17&quot;:1}" data-sheets-textstyleruns="{&quot;1&quot;:0}{&quot;1&quot;:74,&quot;2&quot;:{&quot;2&quot;:{&quot;1&quot;:2,&quot;2&quot;:16711680}}}" style="color: rgb(0, 0, 0); font-size: 10pt; font-family: Arial;"><span style="font-size: 10pt;"><b>DESCRIPTION OF THIS TASK-</b><br>Profile Type: Running "CEO's" Personal Profile.<br></span><span style="font-size: 10pt; color: rgb(255, 0, 0);">Restrictions: Companies website age not more than 3 Years.</span></span><br></p><br>
+                </div></td></tr><tr class="even dt-hasChild shown"><td class="dtr-control">764</td><td>Baby Clothing Store</td><td>United States, United Kingdom, Canada</td><td>E-Commerce</td><td>Alibaba, Ebay, Etsy</td><td><button class="btn btn-link details-button" data-toggle="collapse" data-target="#details-undefined">Hide</button></td></tr><tr><td colspan="6"><div id="details-undefined" class="collapse">
+                    Details: <p><span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;DESCRIPTION OF THIS TASK- \nStore Type: Baby Cloths Seller\n\nRestrictions: Sellers total sells not more than 5,000. &quot;}" data-sheets-userformat="{&quot;2&quot;:12931,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:16777215},&quot;10&quot;:1,&quot;12&quot;:0,&quot;15&quot;:&quot;Lexend, Arial&quot;,&quot;16&quot;:11}" data-sheets-textstyleruns="{&quot;1&quot;:0}{&quot;1&quot;:59,&quot;2&quot;:{&quot;2&quot;:{&quot;1&quot;:2,&quot;2&quot;:15352629}}}" style="color: rgb(0, 0, 0); font-size: 11pt; font-family: Lexend, Arial;"><span style="font-size: 11pt;"><b>DESCRIPTION OF THIS TASK-</b><br>Store Type: Baby Cloths Seller<br></span><span style="font-size: 11pt; color: rgb(234, 67, 53);">Restrictions: Sellers total sells not more than 5,000.</span></span><br></p><br>
+                </div></td></tr><tr class="odd dt-hasChild shown"><td class="dtr-control">763</td><td>GYM Equipment Store</td><td>United States, United Kingdom</td><td>E-Commerce</td><td>Alibaba, Ebay, Etsy</td><td><button class="btn btn-link details-button" data-toggle="collapse" data-target="#details-undefined">Hide</button></td></tr><tr><td colspan="6"><div id="details-undefined" class="collapse">
+                    Details: <p><span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;DESCRIPTION OF THIS TASK- \nStore Type: GYM Equipments Seller (Like- Dumbbell, Barbell, Trademill etc.)\n\nRestrictions: Sellers total sells not more than 5,000. &quot;}" data-sheets-userformat="{&quot;2&quot;:13187,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:16777215},&quot;10&quot;:1,&quot;11&quot;:0,&quot;12&quot;:0,&quot;15&quot;:&quot;Lexend, Arial&quot;,&quot;16&quot;:11}" data-sheets-textstyleruns="{&quot;1&quot;:0}{&quot;1&quot;:104,&quot;2&quot;:{&quot;2&quot;:{&quot;1&quot;:2,&quot;2&quot;:15352629}}}" style=""><font color="#000000" face="Lexend, Arial"><span style="font-size: 11pt;"><b>DESCRIPTION OF THIS TASK-</b></span></font><br><font color="#000000" face="Lexend, Arial"><span style="font-size: 11pt;">Store Type: GYM </span><span style="font-size: 14.6667px;">Equipment's</span><span style="font-size: 11pt;">&nbsp;Seller (Like- Dumbbell, Barbell, </span><span style="font-size: 14.6667px;">Treadmill</span><span style="font-size: 11pt;">&nbsp;etc.)</span></font><br><span style="color: rgb(234, 67, 53); font-family: Lexend, Arial; font-size: 11pt;">Restrictions: Sellers total sells not more than 5,000.</span></span><br></p><br>
+                </div></td></tr><tr class="even dt-hasChild shown"><td class="dtr-control">762</td><td>Mobile Accessories Store</td><td>United States, United Kingdom, Germany, France</td><td>E-Commerce</td><td>Alibaba, Ebay, Etsy</td><td><button class="btn btn-link details-button" data-toggle="collapse" data-target="#details-undefined">Hide</button></td></tr><tr><td colspan="6"><div id="details-undefined" class="collapse">
+                    Details: <p></p><h6><span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;DESCRIPTION OF THIS TASK- \nStore Type: Mobile Accessories Seller (Like- Mobile Keyboard, Mobile Stand, Mobile Cover etc.)\nRestrictions: Sellers total sells not more than 5,000. &quot;}" data-sheets-userformat="{&quot;2&quot;:13187,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:16777215},&quot;10&quot;:1,&quot;11&quot;:0,&quot;12&quot;:0,&quot;15&quot;:&quot;Lexend, Arial&quot;,&quot;16&quot;:11}" data-sheets-textstyleruns="{&quot;1&quot;:0}{&quot;1&quot;:122,&quot;2&quot;:{&quot;2&quot;:{&quot;1&quot;:2,&quot;2&quot;:15352629}}}" style="font-size: 11pt; font-family: Lexend, Arial;"><span style="color: rgb(0, 0, 0); font-size: 11pt;"><b>DESCRIPTION OF THIS TASK-</b><br>Store Type: Mobile Accessories Seller (Like- Mobile Keyboard, Mobile Stand, Mobile Cover etc.)<br></span><span style="font-size: 11pt; background-color: rgb(255, 255, 255);"><font color="#ff0000">Restrictions: Sellers total sells not more than 5,000.</font></span></span><br></h6><p></p><br>
+                </div></td></tr><tr class="odd dt-hasChild shown"><td class="dtr-control">832</td><td>Golf Equipments Seller</td><td>United Kingdom</td><td>E-Commerce</td><td>Alibaba, Ebay, Etsy</td><td><button class="btn btn-link details-button" data-toggle="collapse" data-target="#details-undefined">Hide</button></td></tr><tr><td colspan="6"><div id="details-undefined" class="collapse">
+                    Details: <p><span data-sheets-root="1" style="color: rgb(0, 0, 0); font-size: 12pt; font-family: Lora, Arial;"><span style="font-size: 12pt; font-weight: bold;">Website Type</span><span style="font-size: 12pt;">: Sports &amp; Outdoors<br></span><span style="font-size: 12pt; font-weight: bold;">Seller Type:</span><span style="font-size: 12pt;"> Single Products or Multi Products<br></span><span style="font-size: 12pt; font-weight: bold;">Product Theme:</span><span style="font-size: 12pt;"> Golf Equipment<br><br>Products example:<br>Clubs: Driver, Fairway Woods, Hybrids, Irons (3-9), Wedges (Pitching Wedge, Sand Wedge, Lob Wedge), Putter<br><br>Balls: Golf Balls (Varied by compression, cover material, and construction), Practice Balls (Foam or Plastic)<br><br>Bags: Stand Bags, Cart Bags, Staff Bags, Sunday Bags<br><br>Tees: Standard Tees, Zero Friction Tees, Brush Tees<br><br>Gloves: Left-Hand Gloves (for right-handed golfers), Right-Hand Gloves (for left-handed golfers), Rain Gloves, Winter Gloves<br><br>Footwear: Golf Shoes (Spiked, Spikeless), Golf Socks<br><br>Apparel: Golf Shirts, Golf Pants/Shorts, Golf Hats, Golf Outerwear (Rain Gear, Windbreakers)<br><br>Accessories: Rangefinders, Golf GPS Devices, Ball Markers,Divot, Repair Tools, Golf Towels, Club Headcovers, Golf Umbrellas<br><br>Training Aids: Swing Trainers, Putting Mats, Alignment Sticks, Impact Bags, Chipping Nets<br><br>Carts: Push Carts, Electric Carts, Golf Cars<br><br></span><span style="font-size: 12pt; color: rgb(255, 0, 0);">Restriction: The website age less than 2 years old.</span></span><br></p><br>
+                </div></td></tr><tr class="even dt-hasChild shown"><td class="dtr-control">831</td><td>Golf Equipments Seller</td><td>Canada</td><td>E-Commerce</td><td>Alibaba, Ebay, Etsy</td><td><button class="btn btn-link details-button" data-toggle="collapse" data-target="#details-undefined">Hide</button></td></tr><tr><td colspan="6"><div id="details-undefined" class="collapse">
+                    Details: <p><span data-sheets-root="1" style="color: rgb(0, 0, 0); font-size: 12pt; font-family: Lora, Arial;"><span style="font-size: 12pt; font-weight: bold;">Website Type</span><span style="font-size: 12pt;">: Sports &amp; Outdoors<br></span><span style="font-size: 12pt; font-weight: bold;">Seller Type:</span><span style="font-size: 12pt;"> Single Products or Multi Products<br></span><span style="font-size: 12pt; font-weight: bold;">Product Theme:</span><span style="font-size: 12pt;"> Golf Equipment<br><br><b>Products example:</b><br>Clubs: Driver, Fairway Woods, Hybrids, Irons (3-9), Wedges (Pitching Wedge, Sand Wedge, Lob Wedge), Putter<br><br>Balls: Golf Balls (Varied by compression, cover material, and construction), Practice Balls (Foam or Plastic)<br><br>Bags: Stand Bags, Cart Bags, Staff Bags, Sunday Bags<br><br>Tees: Standard Tees, Zero Friction Tees, Brush Tees<br><br>Gloves: Left-Hand Gloves (for right-handed golfers), Right-Hand Gloves (for left-handed golfers), Rain Gloves, Winter Gloves<br><br>Footwear: Golf Shoes (Spiked, Spikeless), Golf Socks<br><br>Apparel: Golf Shirts, Golf Pants/Shorts, Golf Hats, Golf Outerwear (Rain Gear, Windbreakers)<br><br>Accessories: Rangefinders, Golf GPS Devices, Ball Markers, Divot, Repair Tools, Golf Towels, Club Headcovers, Golf Umbrellas<br><br>Training Aids: Swing Trainers, Putting Mats, Alignment Sticks, Impact Bags, Chipping Nets<br><br>Carts: Push Carts, Electric Carts, Golf Cars<br><br></span><span style="font-size: 12pt; color: rgb(255, 0, 0);">Restriction: The website age less than 2 years old.</span></span><br></p><br>
+                </div></td></tr><tr class="odd dt-hasChild shown"><td class="dtr-control">830</td><td>Golf Equipments Seller</td><td>Ireland</td><td>E-Commerce</td><td>Alibaba, Ebay, Etsy</td><td><button class="btn btn-link details-button" data-toggle="collapse" data-target="#details-undefined">Hide</button></td></tr><tr><td colspan="6"><div id="details-undefined" class="collapse">
+                    Details: <p><span data-sheets-root="1" style="color: rgb(0, 0, 0); font-size: 12pt; font-family: Lora, Arial;"><span style="font-size: 12pt; font-weight: bold;">Website Type</span><span style="font-size: 12pt;">: Sports &amp; Outdoors<br></span><span style="font-size: 12pt; font-weight: bold;">Seller Type:</span><span style="font-size: 12pt;"> Single Products or Multi Products<br></span><span style="font-size: 12pt; font-weight: bold;">Product Theme:</span><span style="font-size: 12pt;"> Golf Equipment<br><br><b>Products example:</b><br>Clubs: Driver, Fairway Woods, Hybrids, Irons (3-9), Wedges (Pitching Wedge, Sand Wedge, Lob Wedge), Putter<br><br>Balls: Golf Balls (Varied by compression, cover material, and construction), Practice Balls (Foam or Plastic)<br><br>Bags: Stand Bags, Cart Bags, Staff Bags, Sunday Bags<br><br>Tees: Standard Tees, Zero Friction Tees, Brush Tees<br><br>Gloves: Left-Hand Gloves (for right-handed golfers), Right-Hand Gloves (for left-handed golfers), Rain Gloves, Winter Gloves<br><br>Footwear: Golf Shoes (Spiked, Spikeless), Golf Socks<br><br>Apparel: Golf Shirts, Golf Pants/Shorts, Golf Hats, Golf Outerwear (Rain Gear, Windbreakers)<br><br>Accessories: Rangefinders, Golf GPS Devices, Ball Markers, Divot, Repair Tools, Golf Towels, Club Headcovers, Golf Umbrellas<br><br>Training Aids: Swing Trainers, Putting Mats, Alignment Sticks, Impact Bags, Chipping Nets<br><br>Carts: Push Carts, Electric Carts, Golf Cars<br><br></span><span style="font-size: 12pt; color: rgb(255, 0, 0);">Restriction: The website age less than 2 years old.</span></span><br></p><br>
+                </div></td></tr><tr class="even dt-hasChild shown"><td class="dtr-control">838</td><td>Golf Equipment's selling websites</td><td>United Kingdom</td><td>ANY</td><td>ANY</td><td><button class="btn btn-link details-button" data-toggle="collapse" data-target="#details-undefined">Hide</button></td></tr><tr><td colspan="6"><div id="details-undefined" class="collapse">
+                    Details: <p><span data-sheets-root="1" style="color: rgb(0, 0, 0); font-size: 12pt; font-family: Lora, Arial;"><span style="font-size: 12pt; font-weight: bold;">Website Type</span><span style="font-size: 12pt;">: Sports &amp; Outdoors<br></span><span style="font-size: 12pt; font-weight: bold;">Seller Type:</span><span style="font-size: 12pt;"> Single Products or Multi Products<br></span><span style="font-size: 12pt; font-weight: bold;">Product Theme:</span><span style="font-size: 12pt;"> Golf Equipment<br><br>Products example:<br>Clubs: Driver, Fairway Woods, Hybrids, Irons (3-9), Wedges (Pitching Wedge, Sand Wedge, Lob Wedge), Putter<br><br>Balls: Golf Balls (Varied by compression, cover material, and construction), Practice Balls (Foam or Plastic)<br><br>Bags: Stand Bags, Cart Bags, Staff Bags, Sunday Bags<br><br>Tees: Standard Tees, Zero Friction Tees, Brush Tees<br><br>Gloves: Left-Hand Gloves (for right-handed golfers), Right-Hand Gloves (for left-handed golfers), Rain Gloves, Winter Gloves<br><br>Footwear: Golf Shoes (Spiked, Spikeless), Golf Socks<br><br>Apparel: Golf Shirts, Golf Pants/Shorts, Golf Hats, Golf Outerwear (Rain Gear, Windbreakers)<br><br>Accessories: Rangefinders, Golf GPS Devices, Ball Markers,Divot, Repair Tools, Golf Towels, Club Headcovers, Golf Umbrellas<br><br>Training Aids: Swing Trainers, Putting Mats, Alignment Sticks, Impact Bags, Chipping Nets<br><br>Carts: Push Carts, Electric Carts, Golf Cars<br><br></span><span style="font-size: 12pt; color: rgb(255, 0, 0);">Restriction: Website without chatbot.<br><br></span><span style="font-size: 12pt;">Objective: The purpose of this task is to gather information from websites that sell Golf equipment's.<br>Websites with chatbot functionalities should be excluded.</span></span></p><br>
+                </div></td></tr><tr class="odd dt-hasChild shown"><td class="dtr-control">837</td><td>Golf Equipment's selling websites</td><td>Canada</td><td>ANY</td><td>ANY</td><td><button class="btn btn-link details-button" data-toggle="collapse" data-target="#details-undefined">Hide</button></td></tr><tr><td colspan="6"><div id="details-undefined" class="collapse">
+                    Details: <p><span data-sheets-root="1" style="color: rgb(0, 0, 0); font-size: 12pt; font-family: Lora, Arial;"><span style="font-size: 12pt; font-weight: bold;">Website Type</span><span style="font-size: 12pt;">: Sports &amp; Outdoors<br></span><span style="font-size: 12pt; font-weight: bold;">Seller Type:</span><span style="font-size: 12pt;"> Single Products or Multi Products<br></span><span style="font-size: 12pt; font-weight: bold;">Product Theme:</span><span style="font-size: 12pt;"> Golf Equipment<br><br>Products example:<br>Clubs: Driver, Fairway Woods, Hybrids, Irons (3-9), Wedges (Pitching Wedge, Sand Wedge, Lob Wedge), Putter<br><br>Balls: Golf Balls (Varied by compression, cover material, and construction), Practice Balls (Foam or Plastic)<br><br>Bags: Stand Bags, Cart Bags, Staff Bags, Sunday Bags<br><br>Tees: Standard Tees, Zero Friction Tees, Brush Tees<br><br>Gloves: Left-Hand Gloves (for right-handed golfers), Right-Hand Gloves (for left-handed golfers), Rain Gloves, Winter Gloves<br><br>Footwear: Golf Shoes (Spiked, Spikeless), Golf Socks<br><br>Apparel: Golf Shirts, Golf Pants/Shorts, Golf Hats, Golf Outerwear (Rain Gear, Windbreakers)<br><br>Accessories: Rangefinders, Golf GPS Devices, Ball Markers,Divot, Repair Tools, Golf Towels, Club Headcovers, Golf Umbrellas<br><br>Training Aids: Swing Trainers, Putting Mats, Alignment Sticks, Impact Bags, Chipping Nets<br><br>Carts: Push Carts, Electric Carts, Golf Cars<br><br></span><span style="font-size: 12pt; color: rgb(255, 0, 0);">Restriction: Website without chatbot.<br><br></span><span style="font-size: 12pt;">Objective: The purpose of this task is to gather information from websites that sell Golf equipment's.<br>Websites with chatbot functionalities should be excluded.</span></span></p><br>
+                </div></td></tr><tr class="even dt-hasChild shown"><td class="dtr-control">836</td><td>Golf Equipment's  selling websites</td><td>Ireland</td><td>ANY</td><td>ANY</td><td><button class="btn btn-link details-button" data-toggle="collapse" data-target="#details-undefined">Hide</button></td></tr><tr><td colspan="6"><div id="details-undefined" class="collapse">
+                    Details: <p><span data-sheets-root="1" style="color: rgb(0, 0, 0); font-size: 12pt; font-family: Lora, Arial;"><span style="font-size: 12pt; font-weight: bold;">Website Type</span><span style="font-size: 12pt;">: Sports &amp; Outdoors<br></span><span style="font-size: 12pt; font-weight: bold;">Seller Type:</span><span style="font-size: 12pt;"> Single Products or Multi Products<br></span><span style="font-size: 12pt; font-weight: bold;">Product Theme:</span><span style="font-size: 12pt;"> Golf Equipment<br><br>Products example:<br>Clubs: Driver, Fairway Woods, Hybrids, Irons (3-9), Wedges (Pitching Wedge, Sand Wedge, Lob Wedge), Putter<br><br>Balls: Golf Balls (Varied by compression, cover material, and construction), Practice Balls (Foam or Plastic)<br><br>Bags: Stand Bags, Cart Bags, Staff Bags, Sunday Bags<br><br>Tees: Standard Tees, Zero Friction Tees, Brush Tees<br><br>Gloves: Left-Hand Gloves (for right-handed golfers), Right-Hand Gloves (for left-handed golfers), Rain Gloves, Winter Gloves<br><br>Footwear: Golf Shoes (Spiked, Spikeless), Golf Socks<br><br>Apparel: Golf Shirts, Golf Pants/Shorts, Golf Hats, Golf Outerwear (Rain Gear, Windbreakers)<br><br>Accessories: Rangefinders, Golf GPS Devices, Ball Markers,Divot, Repair Tools, Golf Towels, Club Headcovers, Golf Umbrellas<br><br>Training Aids: Swing Trainers, Putting Mats, Alignment Sticks, Impact Bags, Chipping Nets<br><br>Carts: Push Carts, Electric Carts, Golf Cars<br><br></span><span style="font-size: 12pt; color: rgb(255, 0, 0);">Restriction: Website without chatbot.<br><br></span><span style="font-size: 12pt;">Objective: The purpose of this task is to gather information from websites that sell Golf equipment's.<br>Websites with chatbot functionalities should be excluded.</span></span></p><br>
+                </div></td></tr><tr class="odd dt-hasChild shown"><td class="dtr-control">827</td><td>Fashion Industry</td><td>Italy</td><td>ANY</td><td>ANY</td><td><button class="btn btn-link details-button" data-toggle="collapse" data-target="#details-undefined">Hide</button></td></tr><tr><td colspan="6"><div id="details-undefined" class="collapse">
+                    Details: <p><span data-sheets-root="1" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Task Description\nWebsite Type:  Apparel &amp; Accessories\nSeller Type: Single Products or Multi Products\nProduct Theme: Men&#39;s / Women&#39;s / Children&#39;s or All\n\nCategories Of Clothing:\nT-shirts, Shirts &amp; Blouses, Sweaters &amp; Cardigans, Sweatshirts &amp; Joggers, Knitwear, Formalwear, Jeans, Pants, Shorts, Skirts, Casual Dresses, Formal Dresses, Special Occasion Dresses  (wedding guest dresses, bridesmaid dresses), Jackets (bomber jackets, denim jackets, leather jackets, blazers), Coats (parkas, trench coats, peacoats, puffer jackets), Vests, Pajamas (sets, separates), Nightgowns, Robes, Loungewear, Sports bras, Leggings &amp; Tights, Yoga pants &amp; tops, Running shorts &amp; shirts, Tracksuits and more\n\nCategories Of Shoe:\nSandals: Flat Sandals, Wedge Sandals, Dress Sandals and more\nHeels: Stilettos, Pumps, Kitten Heels, Platform Heels, Wedges and more\nFlats: Loafers, Ballerinas, Oxfords, Derbys, Mules and more\nSneakers: Running Shoes, Walking Shoes, Training Shoes, Fashion Sneakers, Athletic Shoes and more\nBoots: Ankle Boots, Knee-High Boots, Thigh-High Boots, Chelsea Boots, Combat Boots, Work Boots and more\n\n\nAccessory Category Details:\nHats: Sun Hats,Cold Weather Hats(beanies, berets, fedoras, trapper hats), Baseball Caps,Formal Hats(fedoras, bowlers, top hats)\nScarves: Infinity Scarves, Scarves for Warmth, Scarves for Style, Neck Scarves(bandanas, ascots)\nJewelry: Necklaces (Chains, pendants, chokers, statement necklaces), Earrings, Rings(Statement rings, cocktail rings, wedding bands, stacking rings), Bracelets(Bangles, cuffs, charm bracelets, tennis bracelets), Anklets, and more\nBelts: Leather Belts, Dress Belts, Casual Belts, Statement Belts and more\nBags: Handbags (Totes, satchels, crossbody bags, clutches, shoulder bags), Backpacks, Clutches, Totes, Wallets &amp; Clutches and more\nSunglasses: Aviators, Wayfarers, Cat-Eye, Round, Sporty and more\n\nRestrictions: Websites without chatbots.\n\nObjective: The purpose of this task is to gather information from websites that sell clothing, shoes, and accessories for men&#39;s women&#39;s and children&#39;s. Websites with chatbot functionalities should be excluded.&quot;}" data-sheets-userformat="{&quot;2&quot;:25089,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0,&quot;16&quot;:18,&quot;17&quot;:1}" data-sheets-textstyleruns="{&quot;1&quot;:0,&quot;2&quot;:{&quot;4&quot;:10}}{&quot;1&quot;:151,&quot;2&quot;:{&quot;4&quot;:10,&quot;5&quot;:0}}{&quot;1&quot;:153,&quot;2&quot;:{&quot;4&quot;:10}}{&quot;1&quot;:176,&quot;2&quot;:{&quot;4&quot;:10,&quot;5&quot;:0}}{&quot;1&quot;:690,&quot;2&quot;:{&quot;4&quot;:10}}{&quot;1&quot;:709,&quot;2&quot;:{&quot;4&quot;:10,&quot;5&quot;:0}}{&quot;1&quot;:710,&quot;2&quot;:{&quot;4&quot;:10}}{&quot;1&quot;:718,&quot;2&quot;:{&quot;4&quot;:10,&quot;5&quot;:0}}{&quot;1&quot;:771,&quot;2&quot;:{&quot;4&quot;:10}}{&quot;1&quot;:777,&quot;2&quot;:{&quot;4&quot;:10,&quot;5&quot;:0}}{&quot;1&quot;:842,&quot;2&quot;:{&quot;4&quot;:10}}{&quot;1&quot;:848,&quot;2&quot;:{&quot;4&quot;:10,&quot;5&quot;:0}}{&quot;1&quot;:902,&quot;2&quot;:{&quot;4&quot;:10}}{&quot;1&quot;:911,&quot;2&quot;:{&quot;4&quot;:10,&quot;5&quot;:0}}{&quot;1&quot;:1000,&quot;2&quot;:{&quot;4&quot;:10}}{&quot;1&quot;:1005,&quot;2&quot;:{&quot;4&quot;:10,&quot;5&quot;:0}}{&quot;1&quot;:1106,&quot;2&quot;:{&quot;4&quot;:10}}{&quot;1&quot;:1133,&quot;2&quot;:{&quot;4&quot;:10,&quot;5&quot;:0}}{&quot;1&quot;:1134,&quot;2&quot;:{&quot;4&quot;:10}}{&quot;1&quot;:1138,&quot;2&quot;:{&quot;4&quot;:10,&quot;5&quot;:0}}{&quot;1&quot;:1262,&quot;2&quot;:{&quot;4&quot;:10}}{&quot;1&quot;:1269,&quot;2&quot;:{&quot;4&quot;:10,&quot;5&quot;:0}}{&quot;1&quot;:1359,&quot;2&quot;:{&quot;4&quot;:10}}{&quot;1&quot;:1367,&quot;2&quot;:{&quot;4&quot;:10,&quot;5&quot;:0}}{&quot;1&quot;:1589,&quot;2&quot;:{&quot;4&quot;:10}}{&quot;1&quot;:1595,&quot;2&quot;:{&quot;4&quot;:10,&quot;5&quot;:0}}{&quot;1&quot;:1663,&quot;2&quot;:{&quot;4&quot;:10}}{&quot;1&quot;:1668,&quot;2&quot;:{&quot;4&quot;:10,&quot;5&quot;:0}}{&quot;1&quot;:1794,&quot;2&quot;:{&quot;4&quot;:10}}{&quot;1&quot;:1805,&quot;2&quot;:{&quot;4&quot;:10,&quot;5&quot;:0}}{&quot;1&quot;:1860,&quot;2&quot;:{&quot;2&quot;:{&quot;1&quot;:2,&quot;2&quot;:16711680},&quot;4&quot;:10}}{&quot;1&quot;:1900,&quot;2&quot;:{&quot;4&quot;:10,&quot;5&quot;:0}}{&quot;1&quot;:2054,&quot;2&quot;:{&quot;4&quot;:10}}" style="color: rgb(0, 0, 0); font-size: 18pt; font-family: Arial; font-weight: bold;"><span style="font-size: 10pt;">Task Description<br>Website Type: Apparel &amp; Accessories<br>Seller Type: Single Products or Multi Products<br>Product Theme: Men's / Women's / Children's or All</span><span style="font-size: 10pt;"><br><br></span><span style="font-size: 10pt;">Categories Of Clothing:</span><span style="font-size: 10pt;"><br>T-shirts, Shirts &amp; Blouses, Sweaters &amp; Cardigans, Sweatshirts &amp; Joggers, Knitwear, Formalwear, Jeans, Pants, Shorts, Skirts, Casual Dresses, Formal Dresses, Special Occasion Dresses &nbsp;(wedding guest dresses, bridesmaid dresses), Jackets (bomber jackets, denim jackets, leather jackets, blazers), Coats (parkas, trench coats, peacoats, puffer jackets), Vests, Pajamas (sets, separates), Nightgowns, Robes, Loungewear, Sports bras, Leggings &amp; Tights, Yoga pants &amp; tops, Running shorts &amp; shirts, Tracksuits and more<br><br></span><span style="font-size: 10pt;">Categories Of Shoe:</span><span style="font-size: 10pt;"><br></span><span style="font-size: 10pt;">Sandals:</span><span style="font-size: 10pt;"> Flat Sandals, Wedge Sandals, Dress Sandals and more<br></span><span style="font-size: 10pt;">Heels:</span><span style="font-size: 10pt;"> Stilettos, Pumps, Kitten Heels, Platform Heels, Wedges and more<br></span><span style="font-size: 10pt;">Flats:</span><span style="font-size: 10pt;"> Loafers, Ballerinas, Oxfords, Derbys, Mules and more<br></span><span style="font-size: 10pt;">Sneakers:</span><span style="font-size: 10pt;"> Running Shoes, Walking Shoes, Training Shoes, Fashion Sneakers, Athletic Shoes and more<br></span><span style="font-size: 10pt;">Boots</span><span style="font-size: 10pt;">: Ankle Boots, Knee-High Boots, Thigh-High Boots, Chelsea Boots, Combat Boots, Work Boots and more<br><br><br></span><span style="font-size: 10pt;">Accessory Category Details:</span><span style="font-size: 10pt;"><br></span><span style="font-size: 10pt;">Hats</span><span style="font-size: 10pt;">: Sun Hats,Cold Weather Hats(beanies, berets, fedoras, trapper hats), Baseball Caps,Formal Hats(fedoras, bowlers, top hats)<br></span><span style="font-size: 10pt;">Scarves</span><span style="font-size: 10pt;">: Infinity Scarves, Scarves for Warmth, Scarves for Style, Neck Scarves(bandanas, ascots)<br></span><span style="font-size: 10pt;">Jewelry:</span><span style="font-size: 10pt;"> Necklaces (Chains, pendants, chokers, statement necklaces), Earrings, Rings(Statement rings, cocktail rings, wedding bands, stacking rings), Bracelets(Bangles, cuffs, charm bracelets, tennis bracelets), Anklets, and more<br></span><span style="font-size: 10pt;">Belts:</span><span style="font-size: 10pt;"> Leather Belts, Dress Belts, Casual Belts, Statement Belts and more<br></span><span style="font-size: 10pt;">Bags:</span><span style="font-size: 10pt;"> Handbags (Totes, satchels, crossbody bags, clutches, shoulder bags), Backpacks, Clutches, Totes, Wallets &amp; Clutches and more<br></span><span style="font-size: 10pt;">Sunglasses:</span><span style="font-size: 10pt;"> Aviators, Wayfarers, Cat-Eye, Round, Sporty and more<br><br></span><span style="font-size: 10pt; color: rgb(255, 0, 0);">Restrictions: Websites without chatbots.</span><span style="font-size: 10pt;"><br><br>Objective: The purpose of this task is to gather information from websites that sell clothing, shoes, and accessories for men's women's and children's. </span><span style="font-size: 10pt;">Websites with chatbot functionalities should be excluded.</span></span><br></p><br>
+                </div></td></tr><tr class="even dt-hasChild shown"><td class="dtr-control">826</td><td>Fashion Industry</td><td>United Kingdom</td><td>ANY</td><td>ANY</td><td><button class="btn btn-link details-button" data-toggle="collapse" data-target="#details-undefined">Hide</button></td></tr><tr><td colspan="6"><div id="details-undefined" class="collapse">
+                    Details: <p><span data-sheets-root="1" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Task Description\nWebsite Type:  Apparel &amp; Accessories\nSeller Type: Single Products or Multi Products\nProduct Theme: Men&#39;s / Women&#39;s / Children&#39;s or All\n\nCategories Of Clothing:\nT-shirts, Shirts &amp; Blouses, Sweaters &amp; Cardigans, Sweatshirts &amp; Joggers, Knitwear, Formalwear, Jeans, Pants, Shorts, Skirts, Casual Dresses, Formal Dresses, Special Occasion Dresses  (wedding guest dresses, bridesmaid dresses), Jackets (bomber jackets, denim jackets, leather jackets, blazers), Coats (parkas, trench coats, peacoats, puffer jackets), Vests, Pajamas (sets, separates), Nightgowns, Robes, Loungewear, Sports bras, Leggings &amp; Tights, Yoga pants &amp; tops, Running shorts &amp; shirts, Tracksuits and more\n\nCategories Of Shoe:\nSandals: Flat Sandals, Wedge Sandals, Dress Sandals and more\nHeels: Stilettos, Pumps, Kitten Heels, Platform Heels, Wedges and more\nFlats: Loafers, Ballerinas, Oxfords, Derbys, Mules and more\nSneakers: Running Shoes, Walking Shoes, Training Shoes, Fashion Sneakers, Athletic Shoes and more\nBoots: Ankle Boots, Knee-High Boots, Thigh-High Boots, Chelsea Boots, Combat Boots, Work Boots and more\n\n\nAccessory Category Details:\nHats: Sun Hats,Cold Weather Hats(beanies, berets, fedoras, trapper hats), Baseball Caps,Formal Hats(fedoras, bowlers, top hats)\nScarves: Infinity Scarves, Scarves for Warmth, Scarves for Style, Neck Scarves(bandanas, ascots)\nJewelry: Necklaces (Chains, pendants, chokers, statement necklaces), Earrings, Rings(Statement rings, cocktail rings, wedding bands, stacking rings), Bracelets(Bangles, cuffs, charm bracelets, tennis bracelets), Anklets, and more\nBelts: Leather Belts, Dress Belts, Casual Belts, Statement Belts and more\nBags: Handbags (Totes, satchels, crossbody bags, clutches, shoulder bags), Backpacks, Clutches, Totes, Wallets &amp; Clutches and more\nSunglasses: Aviators, Wayfarers, Cat-Eye, Round, Sporty and more\n\nRestrictions: Websites without chatbots.\n\nObjective: The purpose of this task is to gather information from websites that sell clothing, shoes, and accessories for men&#39;s women&#39;s and children&#39;s. Websites with chatbot functionalities should be excluded.&quot;}" data-sheets-userformat="{&quot;2&quot;:25089,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0,&quot;16&quot;:18,&quot;17&quot;:1}" data-sheets-textstyleruns="{&quot;1&quot;:0,&quot;2&quot;:{&quot;4&quot;:10}}{&quot;1&quot;:151,&quot;2&quot;:{&quot;4&quot;:10,&quot;5&quot;:0}}{&quot;1&quot;:153,&quot;2&quot;:{&quot;4&quot;:10}}{&quot;1&quot;:176,&quot;2&quot;:{&quot;4&quot;:10,&quot;5&quot;:0}}{&quot;1&quot;:690,&quot;2&quot;:{&quot;4&quot;:10}}{&quot;1&quot;:709,&quot;2&quot;:{&quot;4&quot;:10,&quot;5&quot;:0}}{&quot;1&quot;:710,&quot;2&quot;:{&quot;4&quot;:10}}{&quot;1&quot;:718,&quot;2&quot;:{&quot;4&quot;:10,&quot;5&quot;:0}}{&quot;1&quot;:771,&quot;2&quot;:{&quot;4&quot;:10}}{&quot;1&quot;:777,&quot;2&quot;:{&quot;4&quot;:10,&quot;5&quot;:0}}{&quot;1&quot;:842,&quot;2&quot;:{&quot;4&quot;:10}}{&quot;1&quot;:848,&quot;2&quot;:{&quot;4&quot;:10,&quot;5&quot;:0}}{&quot;1&quot;:902,&quot;2&quot;:{&quot;4&quot;:10}}{&quot;1&quot;:911,&quot;2&quot;:{&quot;4&quot;:10,&quot;5&quot;:0}}{&quot;1&quot;:1000,&quot;2&quot;:{&quot;4&quot;:10}}{&quot;1&quot;:1005,&quot;2&quot;:{&quot;4&quot;:10,&quot;5&quot;:0}}{&quot;1&quot;:1106,&quot;2&quot;:{&quot;4&quot;:10}}{&quot;1&quot;:1133,&quot;2&quot;:{&quot;4&quot;:10,&quot;5&quot;:0}}{&quot;1&quot;:1134,&quot;2&quot;:{&quot;4&quot;:10}}{&quot;1&quot;:1138,&quot;2&quot;:{&quot;4&quot;:10,&quot;5&quot;:0}}{&quot;1&quot;:1262,&quot;2&quot;:{&quot;4&quot;:10}}{&quot;1&quot;:1269,&quot;2&quot;:{&quot;4&quot;:10,&quot;5&quot;:0}}{&quot;1&quot;:1359,&quot;2&quot;:{&quot;4&quot;:10}}{&quot;1&quot;:1367,&quot;2&quot;:{&quot;4&quot;:10,&quot;5&quot;:0}}{&quot;1&quot;:1589,&quot;2&quot;:{&quot;4&quot;:10}}{&quot;1&quot;:1595,&quot;2&quot;:{&quot;4&quot;:10,&quot;5&quot;:0}}{&quot;1&quot;:1663,&quot;2&quot;:{&quot;4&quot;:10}}{&quot;1&quot;:1668,&quot;2&quot;:{&quot;4&quot;:10,&quot;5&quot;:0}}{&quot;1&quot;:1794,&quot;2&quot;:{&quot;4&quot;:10}}{&quot;1&quot;:1805,&quot;2&quot;:{&quot;4&quot;:10,&quot;5&quot;:0}}{&quot;1&quot;:1860,&quot;2&quot;:{&quot;2&quot;:{&quot;1&quot;:2,&quot;2&quot;:16711680},&quot;4&quot;:10}}{&quot;1&quot;:1900,&quot;2&quot;:{&quot;4&quot;:10,&quot;5&quot;:0}}{&quot;1&quot;:2054,&quot;2&quot;:{&quot;4&quot;:10}}" style="color: rgb(0, 0, 0); font-size: 18pt; font-family: Arial; font-weight: bold;"><span style="font-size: 10pt;">Task Description<br>Website Type: Apparel &amp; Accessories<br>Seller Type: Single Products or Multi Products<br>Product Theme: Men's / Women's / Children's or All</span><span style="font-size: 10pt;"><br><br></span><span style="font-size: 10pt;">Categories Of Clothing:</span><span style="font-size: 10pt;"><br>T-shirts, Shirts &amp; Blouses, Sweaters &amp; Cardigans, Sweatshirts &amp; Joggers, Knitwear, Formalwear, Jeans, Pants, Shorts, Skirts, Casual Dresses, Formal Dresses, Special Occasion Dresses &nbsp;(wedding guest dresses, bridesmaid dresses), Jackets (bomber jackets, denim jackets, leather jackets, blazers), Coats (parkas, trench coats, peacoats, puffer jackets), Vests, Pajamas (sets, separates), Nightgowns, Robes, Loungewear, Sports bras, Leggings &amp; Tights, Yoga pants &amp; tops, Running shorts &amp; shirts, Tracksuits and more<br><br></span><span style="font-size: 10pt;">Categories Of Shoe:</span><span style="font-size: 10pt;"><br></span><span style="font-size: 10pt;">Sandals:</span><span style="font-size: 10pt;"> Flat Sandals, Wedge Sandals, Dress Sandals and more<br></span><span style="font-size: 10pt;">Heels:</span><span style="font-size: 10pt;"> Stilettos, Pumps, Kitten Heels, Platform Heels, Wedges and more<br></span><span style="font-size: 10pt;">Flats:</span><span style="font-size: 10pt;"> Loafers, Ballerinas, Oxfords, Derbys, Mules and more<br></span><span style="font-size: 10pt;">Sneakers:</span><span style="font-size: 10pt;"> Running Shoes, Walking Shoes, Training Shoes, Fashion Sneakers, Athletic Shoes and more<br></span><span style="font-size: 10pt;">Boots</span><span style="font-size: 10pt;">: Ankle Boots, Knee-High Boots, Thigh-High Boots, Chelsea Boots, Combat Boots, Work Boots and more<br><br><br></span><span style="font-size: 10pt;">Accessory Category Details:</span><span style="font-size: 10pt;"><br></span><span style="font-size: 10pt;">Hats</span><span style="font-size: 10pt;">: Sun Hats,Cold Weather Hats(beanies, berets, fedoras, trapper hats), Baseball Caps,Formal Hats(fedoras, bowlers, top hats)<br></span><span style="font-size: 10pt;">Scarves</span><span style="font-size: 10pt;">: Infinity Scarves, Scarves for Warmth, Scarves for Style, Neck Scarves(bandanas, ascots)<br></span><span style="font-size: 10pt;">Jewelry:</span><span style="font-size: 10pt;"> Necklaces (Chains, pendants, chokers, statement necklaces), Earrings, Rings(Statement rings, cocktail rings, wedding bands, stacking rings), Bracelets(Bangles, cuffs, charm bracelets, tennis bracelets), Anklets, and more<br></span><span style="font-size: 10pt;">Belts:</span><span style="font-size: 10pt;"> Leather Belts, Dress Belts, Casual Belts, Statement Belts and more<br></span><span style="font-size: 10pt;">Bags:</span><span style="font-size: 10pt;"> Handbags (Totes, satchels, crossbody bags, clutches, shoulder bags), Backpacks, Clutches, Totes, Wallets &amp; Clutches and more<br></span><span style="font-size: 10pt;">Sunglasses:</span><span style="font-size: 10pt;"> Aviators, Wayfarers, Cat-Eye, Round, Sporty and more<br><br></span><span style="font-size: 10pt; color: rgb(255, 0, 0);">Restrictions: Websites without chatbots.</span><span style="font-size: 10pt;"><br><br>Objective: The purpose of this task is to gather information from websites that sell clothing, shoes, and accessories for men's women's and children's. </span><span style="font-size: 10pt;">Websites with chatbot functionalities should be excluded.</span></span><br></p><br>
+                </div></td></tr><tr class="odd dt-hasChild shown"><td class="dtr-control">825</td><td>Fashion Industry</td><td>United States</td><td>ANY</td><td>ANY</td><td><button class="btn btn-link details-button" data-toggle="collapse" data-target="#details-undefined">Hide</button></td></tr><tr><td colspan="6"><div id="details-undefined" class="collapse">
+                    Details: <p><span data-sheets-root="1" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Task Description\nWebsite Type:  Apparel &amp; Accessories\nSeller Type: Single Products or Multi Products\nProduct Theme: Men&#39;s / Women&#39;s / Children&#39;s or All\n\nCategories Of Clothing:\nT-shirts, Shirts &amp; Blouses, Sweaters &amp; Cardigans, Sweatshirts &amp; Joggers, Knitwear, Formalwear, Jeans, Pants, Shorts, Skirts, Casual Dresses, Formal Dresses, Special Occasion Dresses  (wedding guest dresses, bridesmaid dresses), Jackets (bomber jackets, denim jackets, leather jackets, blazers), Coats (parkas, trench coats, peacoats, puffer jackets), Vests, Pajamas (sets, separates), Nightgowns, Robes, Loungewear, Sports bras, Leggings &amp; Tights, Yoga pants &amp; tops, Running shorts &amp; shirts, Tracksuits and more\n\nCategories Of Shoe:\nSandals: Flat Sandals, Wedge Sandals, Dress Sandals and more\nHeels: Stilettos, Pumps, Kitten Heels, Platform Heels, Wedges and more\nFlats: Loafers, Ballerinas, Oxfords, Derbys, Mules and more\nSneakers: Running Shoes, Walking Shoes, Training Shoes, Fashion Sneakers, Athletic Shoes and more\nBoots: Ankle Boots, Knee-High Boots, Thigh-High Boots, Chelsea Boots, Combat Boots, Work Boots and more\n\n\nAccessory Category Details:\nHats: Sun Hats,Cold Weather Hats(beanies, berets, fedoras, trapper hats), Baseball Caps,Formal Hats(fedoras, bowlers, top hats)\nScarves: Infinity Scarves, Scarves for Warmth, Scarves for Style, Neck Scarves(bandanas, ascots)\nJewelry: Necklaces (Chains, pendants, chokers, statement necklaces), Earrings, Rings(Statement rings, cocktail rings, wedding bands, stacking rings), Bracelets(Bangles, cuffs, charm bracelets, tennis bracelets), Anklets, and more\nBelts: Leather Belts, Dress Belts, Casual Belts, Statement Belts and more\nBags: Handbags (Totes, satchels, crossbody bags, clutches, shoulder bags), Backpacks, Clutches, Totes, Wallets &amp; Clutches and more\nSunglasses: Aviators, Wayfarers, Cat-Eye, Round, Sporty and more\n\nRestrictions: Websites without chatbots.\n\nObjective: The purpose of this task is to gather information from websites that sell clothing, shoes, and accessories for men&#39;s women&#39;s and children&#39;s. Websites with chatbot functionalities should be excluded.&quot;}" data-sheets-userformat="{&quot;2&quot;:25089,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0,&quot;16&quot;:18,&quot;17&quot;:1}" data-sheets-textstyleruns="{&quot;1&quot;:0,&quot;2&quot;:{&quot;4&quot;:10}}{&quot;1&quot;:151,&quot;2&quot;:{&quot;4&quot;:10,&quot;5&quot;:0}}{&quot;1&quot;:153,&quot;2&quot;:{&quot;4&quot;:10}}{&quot;1&quot;:176,&quot;2&quot;:{&quot;4&quot;:10,&quot;5&quot;:0}}{&quot;1&quot;:690,&quot;2&quot;:{&quot;4&quot;:10}}{&quot;1&quot;:709,&quot;2&quot;:{&quot;4&quot;:10,&quot;5&quot;:0}}{&quot;1&quot;:710,&quot;2&quot;:{&quot;4&quot;:10}}{&quot;1&quot;:718,&quot;2&quot;:{&quot;4&quot;:10,&quot;5&quot;:0}}{&quot;1&quot;:771,&quot;2&quot;:{&quot;4&quot;:10}}{&quot;1&quot;:777,&quot;2&quot;:{&quot;4&quot;:10,&quot;5&quot;:0}}{&quot;1&quot;:842,&quot;2&quot;:{&quot;4&quot;:10}}{&quot;1&quot;:848,&quot;2&quot;:{&quot;4&quot;:10,&quot;5&quot;:0}}{&quot;1&quot;:902,&quot;2&quot;:{&quot;4&quot;:10}}{&quot;1&quot;:911,&quot;2&quot;:{&quot;4&quot;:10,&quot;5&quot;:0}}{&quot;1&quot;:1000,&quot;2&quot;:{&quot;4&quot;:10}}{&quot;1&quot;:1005,&quot;2&quot;:{&quot;4&quot;:10,&quot;5&quot;:0}}{&quot;1&quot;:1106,&quot;2&quot;:{&quot;4&quot;:10}}{&quot;1&quot;:1133,&quot;2&quot;:{&quot;4&quot;:10,&quot;5&quot;:0}}{&quot;1&quot;:1134,&quot;2&quot;:{&quot;4&quot;:10}}{&quot;1&quot;:1138,&quot;2&quot;:{&quot;4&quot;:10,&quot;5&quot;:0}}{&quot;1&quot;:1262,&quot;2&quot;:{&quot;4&quot;:10}}{&quot;1&quot;:1269,&quot;2&quot;:{&quot;4&quot;:10,&quot;5&quot;:0}}{&quot;1&quot;:1359,&quot;2&quot;:{&quot;4&quot;:10}}{&quot;1&quot;:1367,&quot;2&quot;:{&quot;4&quot;:10,&quot;5&quot;:0}}{&quot;1&quot;:1589,&quot;2&quot;:{&quot;4&quot;:10}}{&quot;1&quot;:1595,&quot;2&quot;:{&quot;4&quot;:10,&quot;5&quot;:0}}{&quot;1&quot;:1663,&quot;2&quot;:{&quot;4&quot;:10}}{&quot;1&quot;:1668,&quot;2&quot;:{&quot;4&quot;:10,&quot;5&quot;:0}}{&quot;1&quot;:1794,&quot;2&quot;:{&quot;4&quot;:10}}{&quot;1&quot;:1805,&quot;2&quot;:{&quot;4&quot;:10,&quot;5&quot;:0}}{&quot;1&quot;:1860,&quot;2&quot;:{&quot;2&quot;:{&quot;1&quot;:2,&quot;2&quot;:16711680},&quot;4&quot;:10}}{&quot;1&quot;:1900,&quot;2&quot;:{&quot;4&quot;:10,&quot;5&quot;:0}}{&quot;1&quot;:2054,&quot;2&quot;:{&quot;4&quot;:10}}" style="color: rgb(0, 0, 0); font-size: 18pt; font-family: Arial; font-weight: bold;"><span style="font-size: 10pt;">Task Description<br>Website Type: Apparel &amp; Accessories<br>Seller Type: Single Products or Multi Products<br>Product Theme: Men's / Women's / Children's or All</span><span style="font-size: 10pt;"><br><br></span><span style="font-size: 10pt;">Categories Of Clothing:</span><span style="font-size: 10pt;"><br>T-shirts, Shirts &amp; Blouses, Sweaters &amp; Cardigans, Sweatshirts &amp; Joggers, Knitwear, Formalwear, Jeans, Pants, Shorts, Skirts, Casual Dresses, Formal Dresses, Special Occasion Dresses &nbsp;(wedding guest dresses, bridesmaid dresses), Jackets (bomber jackets, denim jackets, leather jackets, blazers), Coats (parkas, trench coats, peacoats, puffer jackets), Vests, Pajamas (sets, separates), Nightgowns, Robes, Loungewear, Sports bras, Leggings &amp; Tights, Yoga pants &amp; tops, Running shorts &amp; shirts, Tracksuits and more<br><br></span><span style="font-size: 10pt;">Categories Of Shoe:</span><span style="font-size: 10pt;"><br></span><span style="font-size: 10pt;">Sandals:</span><span style="font-size: 10pt;"> Flat Sandals, Wedge Sandals, Dress Sandals and more<br></span><span style="font-size: 10pt;">Heels:</span><span style="font-size: 10pt;"> Stilettos, Pumps, Kitten Heels, Platform Heels, Wedges and more<br></span><span style="font-size: 10pt;">Flats:</span><span style="font-size: 10pt;"> Loafers, Ballerinas, Oxfords, Derbys, Mules and more<br></span><span style="font-size: 10pt;">Sneakers:</span><span style="font-size: 10pt;"> Running Shoes, Walking Shoes, Training Shoes, Fashion Sneakers, Athletic Shoes and more<br></span><span style="font-size: 10pt;">Boots</span><span style="font-size: 10pt;">: Ankle Boots, Knee-High Boots, Thigh-High Boots, Chelsea Boots, Combat Boots, Work Boots and more<br><br><br></span><span style="font-size: 10pt;">Accessory Category Details:</span><span style="font-size: 10pt;"><br></span><span style="font-size: 10pt;">Hats</span><span style="font-size: 10pt;">: Sun Hats,Cold Weather Hats(beanies, berets, fedoras, trapper hats), Baseball Caps,Formal Hats(fedoras, bowlers, top hats)<br></span><span style="font-size: 10pt;">Scarves</span><span style="font-size: 10pt;">: Infinity Scarves, Scarves for Warmth, Scarves for Style, Neck Scarves(bandanas, ascots)<br></span><span style="font-size: 10pt;">Jewelry:</span><span style="font-size: 10pt;"> Necklaces (Chains, pendants, chokers, statement necklaces), Earrings, Rings(Statement rings, cocktail rings, wedding bands, stacking rings), Bracelets(Bangles, cuffs, charm bracelets, tennis bracelets), Anklets, and more<br></span><span style="font-size: 10pt;">Belts:</span><span style="font-size: 10pt;"> Leather Belts, Dress Belts, Casual Belts, Statement Belts and more<br></span><span style="font-size: 10pt;">Bags:</span><span style="font-size: 10pt;"> Handbags (Totes, satchels, crossbody bags, clutches, shoulder bags), Backpacks, Clutches, Totes, Wallets &amp; Clutches and more<br></span><span style="font-size: 10pt;">Sunglasses:</span><span style="font-size: 10pt;"> Aviators, Wayfarers, Cat-Eye, Round, Sporty and more<br><br></span><span style="font-size: 10pt; color: rgb(255, 0, 0);">Restrictions: Websites without chatbots.</span><span style="font-size: 10pt;"><br><br>Objective: The purpose of this task is to gather information from websites that sell clothing, shoes, and accessories for men's women's and children's. </span><span style="font-size: 10pt;">Websites with chatbot functionalities should be excluded.</span></span><br></p><br>
+                </div></td></tr><tr class="even dt-hasChild shown"><td class="dtr-control">821</td><td>Pet Clothing Websites</td><td>United States, United Kingdom, Canada</td><td>ANY</td><td>ANY</td><td><button class="btn btn-link details-button" data-toggle="collapse" data-target="#details-undefined">Hide</button></td></tr><tr><td colspan="6"><div id="details-undefined" class="collapse">
+                    Details: <p><span data-sheets-root="1" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;DESCRIPTION OF THIS TASK- \nWebsite Type: Pet Clothes Seller\nRestrictions: Website age not more than 3 Years.&quot;}" data-sheets-userformat="{&quot;2&quot;:12931,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:16777215},&quot;10&quot;:1,&quot;12&quot;:0,&quot;15&quot;:&quot;Lexend, Arial&quot;,&quot;16&quot;:11}" data-sheets-textstyleruns="{&quot;1&quot;:0}{&quot;1&quot;:60,&quot;2&quot;:{&quot;2&quot;:{&quot;1&quot;:2,&quot;2&quot;:15352629}}}" style="color: rgb(0, 0, 0); font-size: 11pt; font-family: Lexend, Arial;"><span style="font-size: 11pt;">DESCRIPTION OF THIS TASK-<br>Website Type: Pet Clothes Seller<br></span><span style="font-size: 11pt; color: rgb(234, 67, 53);">Restrictions: Website age not more than 3 Years.</span></span><br></p><br>
+                </div></td></tr><tr class="odd dt-hasChild shown"><td class="dtr-control">835</td><td>Golf Equipment's Seller</td><td>JAPAN</td><td>E-Commerce</td><td>Alibaba, Ebay, Etsy</td><td><button class="btn btn-link details-button" data-toggle="collapse" data-target="#details-undefined">Hide</button></td></tr><tr><td colspan="6"><div id="details-undefined" class="collapse">
+                    Details: <p><span data-sheets-root="1" style="color: rgb(0, 0, 0); font-size: 12pt; font-family: Lora, Arial;"><span style="font-size: 12pt; font-weight: bold;">Website Type</span><span style="font-size: 12pt;">: Sports &amp; Outdoors<br></span><span style="font-size: 12pt; font-weight: bold;">Seller Type:</span><span style="font-size: 12pt;"> Single Products or Multi Products<br></span><span style="font-size: 12pt; font-weight: bold;">Product Theme:</span><span style="font-size: 12pt;"> Golf Equipment<br><br>Products example:<br>Clubs: Driver, Fairway Woods, Hybrids, Irons (3-9), Wedges (Pitching Wedge, Sand Wedge, Lob Wedge), Putter<br><br>Balls: Golf Balls (Varied by compression, cover material, and construction), Practice Balls (Foam or Plastic)<br><br>Bags: Stand Bags, Cart Bags, Staff Bags, Sunday Bags<br><br>Tees: Standard Tees, Zero Friction Tees, Brush Tees<br><br>Gloves: Left-Hand Gloves (for right-handed golfers), Right-Hand Gloves (for left-handed golfers), Rain Gloves, Winter Gloves<br><br>Footwear: Golf Shoes (Spiked, Spikeless), Golf Socks<br><br>Apparel: Golf Shirts, Golf Pants/Shorts, Golf Hats, Golf Outerwear (Rain Gear, Windbreakers)<br><br>Accessories: Rangefinders, Golf GPS Devices, Ball Markers,Divot, Repair Tools, Golf Towels, Club Headcovers, Golf Umbrellas<br><br>Training Aids: Swing Trainers, Putting Mats, Alignment Sticks, Impact Bags, Chipping Nets<br><br>Carts: Push Carts, Electric Carts, Golf Cars<br><br></span><span style="font-size: 12pt; color: rgb(255, 0, 0);">Restriction: The website age less than 2 years old.</span></span><br></p><br>
+                </div></td></tr><tr class="even dt-hasChild shown"><td class="dtr-control">834</td><td>Golf Equipment's Seller</td><td>SOUTH AFRICA</td><td>E-Commerce</td><td>Alibaba, Ebay, Etsy</td><td><button class="btn btn-link details-button" data-toggle="collapse" data-target="#details-undefined">Hide</button></td></tr><tr><td colspan="6"><div id="details-undefined" class="collapse">
+                    Details: <p><span data-sheets-root="1" style="color: rgb(0, 0, 0); font-size: 12pt; font-family: Lora, Arial;"><span style="font-size: 12pt; font-weight: bold;">Website Type</span><span style="font-size: 12pt;">: Sports &amp; Outdoors<br></span><span style="font-size: 12pt; font-weight: bold;">Seller Type:</span><span style="font-size: 12pt;"> Single Products or Multi Products<br></span><span style="font-size: 12pt; font-weight: bold;">Product Theme:</span><span style="font-size: 12pt;"> Golf Equipment<br><br>Products example:<br>Clubs: Driver, Fairway Woods, Hybrids, Irons (3-9), Wedges (Pitching Wedge, Sand Wedge, Lob Wedge), Putter<br><br>Balls: Golf Balls (Varied by compression, cover material, and construction), Practice Balls (Foam or Plastic)<br><br>Bags: Stand Bags, Cart Bags, Staff Bags, Sunday Bags<br><br>Tees: Standard Tees, Zero Friction Tees, Brush Tees<br><br>Gloves: Left-Hand Gloves (for right-handed golfers), Right-Hand Gloves (for left-handed golfers), Rain Gloves, Winter Gloves<br><br>Footwear: Golf Shoes (Spiked, Spikeless), Golf Socks<br><br>Apparel: Golf Shirts, Golf Pants/Shorts, Golf Hats, Golf Outerwear (Rain Gear, Windbreakers)<br><br>Accessories: Rangefinders, Golf GPS Devices, Ball Markers,Divot, Repair Tools, Golf Towels, Club Headcovers, Golf Umbrellas<br><br>Training Aids: Swing Trainers, Putting Mats, Alignment Sticks, Impact Bags, Chipping Nets<br><br>Carts: Push Carts, Electric Carts, Golf Cars<br><br></span><span style="font-size: 12pt; color: rgb(255, 0, 0);">Restriction: The website age less than 2 years old.</span></span><br></p><br>
+                </div></td></tr><tr class="odd dt-hasChild shown"><td class="dtr-control">833</td><td>Golf Equipment's Seller</td><td>United States</td><td>E-Commerce</td><td>Alibaba, Ebay, Etsy</td><td><button class="btn btn-link details-button" data-toggle="collapse" data-target="#details-undefined">Hide</button></td></tr><tr><td colspan="6"><div id="details-undefined" class="collapse">
+                    Details: <p><span data-sheets-root="1" style="color: rgb(0, 0, 0); font-size: 12pt; font-family: Lora, Arial;"><span style="font-size: 12pt; font-weight: bold;">Website Type</span><span style="font-size: 12pt;">: Sports &amp; Outdoors<br></span><span style="font-size: 12pt; font-weight: bold;">Seller Type:</span><span style="font-size: 12pt;"> Single Products or Multi Products<br></span><span style="font-size: 12pt; font-weight: bold;">Product Theme:</span><span style="font-size: 12pt;"> Golf Equipment<br><br>Products example:<br>Clubs: Driver, Fairway Woods, Hybrids, Irons (3-9), Wedges (Pitching Wedge, Sand Wedge, Lob Wedge), Putter<br><br>Balls: Golf Balls (Varied by compression, cover material, and construction), Practice Balls (Foam or Plastic)<br><br>Bags: Stand Bags, Cart Bags, Staff Bags, Sunday Bags<br><br>Tees: Standard Tees, Zero Friction Tees, Brush Tees<br><br>Gloves: Left-Hand Gloves (for right-handed golfers), Right-Hand Gloves (for left-handed golfers), Rain Gloves, Winter Gloves<br><br>Footwear: Golf Shoes (Spiked, Spikeless), Golf Socks<br><br>Apparel: Golf Shirts, Golf Pants/Shorts, Golf Hats, Golf Outerwear (Rain Gear, Windbreakers)<br><br>Accessories: Rangefinders, Golf GPS Devices, Ball Markers,Divot, Repair Tools, Golf Towels, Club Headcovers, Golf Umbrellas<br><br>Training Aids: Swing Trainers, Putting Mats, Alignment Sticks, Impact Bags, Chipping Nets<br><br>Carts: Push Carts, Electric Carts, Golf Cars<br><br></span><span style="font-size: 12pt; color: rgb(255, 0, 0);">Restriction: The website age less than 2 years old.</span></span><br></p><br>
+                </div></td></tr></tbody>
+            </table><div class="dataTables_info" id="work-details-table_info" role="status" aria-live="polite">Showing 1 to 57 of 57 entries</div><div class="dataTables_paginate paging_simple_numbers" id="work-details-table_paginate"><a class="paginate_button previous disabled" aria-controls="work-details-table" aria-disabled="true" role="link" data-dt-idx="previous" tabindex="-1" id="work-details-table_previous">Previous</a><span><a class="paginate_button current" aria-controls="work-details-table" role="link" aria-current="page" data-dt-idx="0" tabindex="0">1</a></span><a class="paginate_button next disabled" aria-controls="work-details-table" aria-disabled="true" role="link" data-dt-idx="next" tabindex="-1" id="work-details-table_next">Next</a></div></div>
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =========== Scripts =========  -->
+
+    <script src="./Keywords _ Earnyway_files/user-dashboard-main.js.download"></script>
+
+    <!-- ====== ionicons ======= -->
+    <script type="module" src="./Keywords _ Earnyway_files/ionicons.esm.js.download"></script>
+    <script nomodule="" src="./Keywords _ Earnyway_files/ionicons.js.download"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Function to toggle dropdown visibility
+            function toggleDropdown(dropdown) {
+                dropdown.classList.toggle("show-dropdown");
+            }
+
+            // Fetch the unread count from the server
+            fetch('https://earnyway.com/user/unread-notification-count')
+                .then(response => response.json())
+                .then(data => {
+                    const unreadCountBadge = document.getElementById('unreadCountBadge');
+                    if (unreadCountBadge) {
+                        const unreadCount = data.unreadAnnouncementCount;
+                        unreadCountBadge.textContent = unreadCount;
+
+                        // Show the badge only if the count is greater than zero
+                        unreadCountBadge.style.display = unreadCount > 0 ? 'inline' : 'none';
+                    }
+                })
+                .catch(error => console.error('Error fetching unread count:', error));
+
+            // Function to fetch and render announcements
+            function fetchAndRenderAnnouncements() {
+                fetch('https://earnyway.com/user/latest-unread-announcement')
+                    .then(response => response.json())
+                    .then(announcementsData => renderAnnouncements(announcementsData))
+                    .catch(error => console.error('Error fetching announcements:', error));
+            }
+
+            // Function to render announcements in the dropdown
+            function renderAnnouncements(announcementsData) {
+                const announcementDropdownBody = document.getElementById("announcement-dropdown-body");
+                announcementDropdownBody.innerHTML = ''; // Clear previous content
+
+                if (announcementsData && announcementsData.length > 0) {
+                    announcementsData.forEach(announcement => {
+                        const {
+                            user_announcement_id,
+                            title,
+                            created_time
+                        } = announcement;
+
+                        // Create a new announcement item with onclick event for redirection
+                        const announcementItem = document.createElement('div');
+                        announcementItem.classList.add('account-dropdown__item');
+                        announcementItem.innerHTML = `
+                        <a href="javascript:void(0);" 
+                            onclick="markAsReadAndRedirect(${user_announcement_id})"
+                            style="text-decoration: none; color: inherit; display: block;">
+                            <strong>${title}</strong><br>
+                            <small>${created_time}</small>
+                        </a>
+                    `;
+
+                        // Add an onclick event to mark the announcement as read and redirect
+                        announcementItem.addEventListener('click', () => markAsReadAndRedirect(
+                            user_announcement_id));
+
+                        // Append the announcement item to the dropdown body
+                        announcementDropdownBody.appendChild(announcementItem);
+                    });
+                } else {
+                    // If no unread announcements or undefined data, display a message
+                    announcementDropdownBody.innerHTML +=
+                        '<div class="account-dropdown__item">No unread announcements</div>';
+                }
+            }
+
+            // Function to mark an announcement as read and redirect to the announcements page
+            function markAsReadAndRedirect(userAnnouncementId) {
+                console.log('User Announcement ID:', userAnnouncementId);
+
+                // Simulate an AJAX request to mark the announcement as read
+                fetch('https://earnyway.com/user/mark-as-read/__userAnnouncementId__'
+                        .replace('__userAnnouncementId__', userAnnouncementId), {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json',
+                                'X-CSRF-TOKEN': 'LclGXDOJ8QlxNPILSZ86IpUB8lFpucdFeH54NtNv',
+                            },
+                            body: JSON.stringify({
+                                userAnnouncementId: userAnnouncementId
+                            }),
+                        })
+                    .then(response => response.json())
+                    .then(data => {
+                        // Check if the response indicates success
+                        if (data.success) {
+                            console.log('Announcement marked as read:', data.message);
+
+                            // Simulate a successful mark as read and redirect after 1 second
+                            setTimeout(() => {
+                                console.log('Simulating successful mark as read');
+                                window.location.href =
+                                    'https://earnyway.com/user/announcements'; // Replace with your actual route
+                            }, 1000);
+                        } else {
+                            console.error('Error marking announcement as read:', data.message);
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error marking announcement as read:', error.message);
+                    });
+            }
+
+            // Event listeners for user dropdown
+            const userDropdownToggle = document.getElementById("user-dropdown-toggle");
+            const accountDropdown = document.querySelector(".account-dropdown");
+            
+            userDropdownToggle.addEventListener("click", () => toggleDropdown(accountDropdown));
+             
+
+            // Event listeners for announcement dropdown
+            const announcementDropdownToggle = document.getElementById("announcement-dropdown-toggle");
+            const announcementDropdown = document.querySelector(".announcement-dropdown");
+
+            // Toggle the dropdown when the button is clicked
+            userDropdownToggle.addEventListener("click", function(event) {
+                event.stopPropagation();
+                toggleDropdown(accountDropdown);
+            });
+
+            announcementDropdownToggle.addEventListener("click", function(event) {
+                event.stopPropagation();
+                toggleDropdown(announcementDropdown);
+                fetchAndRenderAnnouncements();
+            });
+            
+            // Function to show the dropdown
+            function showDropdown(dropdown) {
+                dropdown.classList.add('show');
+            }
+
+            // Function to hide the dropdown
+            function hideDropdown(dropdown) {
+                dropdown.classList.remove('show');
+            }
+
+            // Toggle the dropdown
+            function toggleDropdown(dropdown) {
+                if (dropdown.classList.contains('show')) {
+                    hideDropdown(dropdown);
+                } else {
+                    showDropdown(dropdown);
+                }
+            }
+
+            // Hide the dropdowns when clicking outside of them
+            document.addEventListener('click', function(event) {
+                if (!accountDropdown.contains(event.target) && event.target !==
+                    userDropdownToggle) {
+                    hideDropdown(accountDropdown);
+                }
+                if (!announcementDropdown.contains(event.target) && event.target !==
+                    announcementDropdownToggle) {
+                    hideDropdown(announcementDropdown);
+                }
+            });
+
+            // Prevent dropdowns from closing when clicking inside them
+            accountDropdown.addEventListener('click', function(event) {
+                event.stopPropagation();
+            });
+
+            announcementDropdown.addEventListener('click', function(event) {
+                event.stopPropagation();
+            });
+
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const toggleBtn = document.getElementById("toggle-btn");
+            const toggleMobileBtn = document.getElementById("toggle-mobile-btn");
+            const navigation = document.getElementById("navigation");
+            const mainContent = document.querySelectorAll(".main");
+            const toggleIcon = toggleBtn.querySelector("i");
+
+            // Function to toggle navigation visibility and active state
+            function toggleNavigation() {
+                const isSmallScreen = window.innerWidth < 769;
+                const isActive = navigation.classList.toggle("active");
+
+                mainContent.forEach(main => {
+                    main.classList.toggle("active", isSmallScreen ? !isActive :
+                        isActive); // Invert the active state for small screens
+                });
+
+                // Toggle the Font Awesome icon classes
+                toggleIcon.classList.toggle("fa-chevron-left", isSmallScreen ? !isActive : isActive);
+                toggleIcon.classList.toggle("fa-chevron-right", isSmallScreen ? isActive : !isActive);
+
+                console.log("Navigation toggled, isActive:", isActive);
+            }
+
+            // Function to handle initial state based on screen size
+            function handleInitialState() {
+                const isSmallScreen = window.innerWidth < 769;
+
+                if (isSmallScreen) {
+                    // Show navigation by default on small screens
+                    navigation.style.display = "block";
+                    navigation.classList.add("active"); // Ensure navigation is active by default
+                    toggleIcon.classList.add("fa-chevron-left"); // Set toggle icon for active state
+                    toggleIcon.classList.remove("fa-chevron-right");
+                } else {
+                    // Hide navigation on larger screens
+                    navigation.style.display = "none";
+                    navigation.classList.remove("active");
+                    toggleIcon.classList.remove("fa-chevron-left");
+                    toggleIcon.classList.add("fa-chevron-right");
+                }
+
+                mainContent.forEach(main => {
+                    main.classList.toggle("active", isSmallScreen ? false :
+                        false); // Ensure main content is inactive by default
+                });
+            }
+
+            // Initial state setup
+            handleInitialState();
+
+            // Click event for desktop toggle button
+            toggleBtn.addEventListener("click", toggleNavigation);
+
+            // Click event for mobile toggle button
+            toggleMobileBtn.addEventListener("click", toggleNavigation);
+
+            // Reapply initial state on window resize
+            window.addEventListener('resize', handleInitialState);
+        });
+    </script>
+
+    <!--Include page - specific scripts-->
+        <script src="./Keywords _ Earnyway_files/jquery-3.6.4.min.js.download"></script>
+    <script src="./Keywords _ Earnyway_files/jquery.dataTables.min.js.download"></script>
+    <script src="./Keywords _ Earnyway_files/dataTables.responsive.min.js.download"></script>
+    <script src="./Keywords _ Earnyway_files/select2.min.js.download"></script>
+    <script>
+        $(document).ready(function() {
+            // Initialize select2
+            $('#category, #countries, #verticals').select2();
+
+            // DataTable initialization
+            var dataTable = $('#work-details-table').DataTable({
+                responsive: true,
+                select: true,
+                processing: true,
+                serverSide: true,
+                columnDefs: [{
+                        responsivePriority: 1,
+                        targets: 0
+                    },
+                    {
+                        responsivePriority: 2,
+                        targets: -2
+                    }
+                ],
+                ajax: {
+                    url: 'https://earnyway.com/user/keywords',
+                    data: function(d) {
+                        d.category = $('#category').val();
+                        d.countries = $('#countries').val();
+                        d.verticals = $('#verticals').val();
+                    },
+                },
+                columns: [{
+                        data: 'work_keyword_id',
+                        name: 'work_keyword_id'
+                    },
+                    {
+                        data: 'name',
+                        name: 'name'
+                    },
+                    {
+                        data: 'country',
+                        name: 'country'
+                    },
+                    {
+                        data: 'category',
+                        name: 'category'
+                    },
+                    {
+                        data: 'vertical',
+                        name: 'vertical'
+                    },
+                    {
+                        data: 'created_at',
+                        name: 'created_at',
+                        visible: false // Hide the 'created_at' column
+                    },
+                    {
+                        data: 'details',
+                        name: 'details',
+                        render: function(data, type, full, meta) {
+                            return '<button class="btn btn-link details-button" ' +
+                                'data-toggle="collapse" data-target="#details-' + full.id +
+                                '">Show</button>';
+                        }
+                    },
+                ],
+                order: [
+                    [5, 'desc'] // Assuming 'created_at' is the 6th column (index 5)
+                ]
+            });
+
+            // Handle form submission for filtering
+            $('#filter-form').on('submit', function(e) {
+                e.preventDefault();
+                dataTable.ajax.reload();
+            });
+
+            // Clear filters
+            $('#clear-filters').on('click', function() {
+                $('#filter-form')[0].reset();
+                $('#category, #countries, #verticals').val(null).trigger('change');
+                dataTable.ajax.reload();
+            });
+
+            // Toggle details on button click
+            $('#work-details-table tbody').on('click', '.details-button', function() {
+                var tr = $(this).closest('tr');
+                var row = dataTable.row(tr);
+
+                if (row.child.isShown()) {
+                    row.child.hide();
+                    tr.removeClass('shown');
+                    $(this).text('Show');
+                } else {
+                    row.child(formatDetails(row.data())).show();
+                    tr.addClass('shown');
+                    $(this).text('Hide');
+                }
+            });
+
+            // Function to format details for the DataTable
+            function formatDetails(data) {
+                var detailsText = $('<div>').html(data.details).text();
+                return `<div id="details-${data.id}" class="collapse">
+                    Details: ${detailsText}<br>
+                </div>`;
+            }
+        });
+    </script>
+
+
+
+
+</body></html>
